@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>$article_title$$PageNO$-$web_name$</title>
+<meta name="keywords" content="$article_keywords$">
+<meta name="description" content="$article_description$">
+<link href="/css/$web_theme$/inner.css" rel="stylesheet" type="text/css" />
+<link href="/css/$web_theme$/common.css" rel="stylesheet" type="text/css" />
+<link href="/css/default/sexylightbox.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/functions.js"></script>
+<script type="text/javascript" src="/js/ScrollPic.js"></script>
+<script type="text/javascript" src="/images/iepng/iepngfix_tilebg.js"></script>
+<script type="text/javascript" src="/js/SLB-compressed.js"></script>
+  <script type="text/javascript" src="/js/SLB.v2.3.mootools.min.js"></script>
+  <script type="text/javascript">
+    window.addEvent('domready', function(){ //ablum box style black,blanco,negro,white
+      SexyLightbox = new SexyLightBox({color:'white', dir: '/images/sexyimages'});
+    });
+  </script></head>
+
+<body>
+<div id="wrapper">
+
+<!--head start-->
+<div id="head">
+
+<!--top start -->
+<div class="top">
+<div class="TopInfo"><div class="link">语言: <a  href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体中文</a> | <a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體中文</a> | <a href="/English">English</a></div>
+</div>
+<div class="clearfix"></div>
+<div class="TopLogo">
+<div class="logo"><a href="/"><img src="/images/up_images/$web_image$" alt="$web_name$"></a></div>
+<div class="tel">
+<p class="telW">客服热线</p>
+<p class="telN">$web_tel$</p></div>
+
+</div>
+<div class="clearfix"></div>
+
+</div>
+<!--top end-->
+<!--nav start-->
+<div id="NavLink">
+<div class="NavBG">
+<!--Head Menu Start-->
+$web_TopMenu$
+<!--Head Menu End-->
+</div>
+<div class="clearfix"></div>
+</div>
+<!--nav end-->
+
+<div class="clearfix"></div>
+</div>
+<!--head end-->
+<!--body start-->
+<div id="body">
+<!--focus start-->
+<div id="InnerBanner">
+$Inner_BannerTop$
+</div>
+<!--foncus end-->
+<div class="HeightTab clearfix"></div>
+<!--inner start -->
+<div class="inner">
+<!--left start-->
+<div class="left">
+<div class="Sbox">
+<div class="topic">$ClassName1$ $ClassFolder1$</div>
+<div class="ClassNav">
+<div class="NavTree">
+$Block_LeftClassList$
+</div>
+</div>
+
+</div>
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic"><div class='TopicTitle'>联系方式 Contact</div></div>
+<div class="ContactInfo">
+$web_consult$
+</div>
+
+</div>
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic">搜索 Search</div>
+<div class="SearchBar">
+<form method="get" action="$search_FolderName$/index.asp">
+				<input type="text" name="q" id="search-text" size="15" onBlur="if(this.value=='') this.value='请输入关键词';" 
+onfocus="if(this.value=='请输入关键词') this.value='';" value="请输入关键词" /><input type="submit" id="search-submit" value=" " />
+			</form>
+</div>
+</div>
+<div class="HeightTab clearfix"></div>
+
+</div>
+<!--left end-->
+<!--right start-->
+<div class="right">
+<div class="Position"><span>你的位置：<a href="/">首页</a> > $category_position$</span></div>
+<div class="HeightTab clearfix"></div>
+<!--main start-->
+<div class="main">
+
+<!--content start-->
+<div class="content">
+<div class="title"><h3>$article_title$</h3></div>
+<div class="infos">$article_time$</div>
+<!--image start-->
+<div class='ImageList'>
+$Article_Pics$
+<div class="clearfix"></div>
+</div>
+<!--image end -->
+<div class="IntroTitle">详细介绍</div>
+<div id="MainContent" class="maincontent clearfix">
+$article_content$
+$PageList$
+
+<div class='HeightTab clearfix'></div>
+
+</div>
+<div class='clicktimes'><script language="javascript" src="/inc/article_view.asp?id=$article_id$"></script></div>
+<div class="prenext">
+<div class="IntroTitle">更多图片</div>
+<DIV class="blk_29">
+<DIV class="LeftBotton" id="LeftArr"></DIV>
+<DIV class="Cont" id="ISL_Cont_1"><!-- 图片列表 begin -->
+$article_next$
+
+<!-- 图片列表 end --></DIV>
+
+<DIV class="RightBotton" id="RightArr"></DIV>
+</DIV>
+<SCRIPT language=javascript type=text/javascript>
+		<!--//--><![CDATA[//><!--
+		var scrollPic_02 = new ScrollPic();
+		scrollPic_02.scrollContId   = "ISL_Cont_1"; //内容容器ID
+		scrollPic_02.arrLeftId      = "LeftArr";//左箭头ID
+		scrollPic_02.arrRightId     = "RightArr"; //右箭头ID
+
+		scrollPic_02.frameWidth     = 621;//显示框宽度
+		scrollPic_02.pageWidth      = 621; //翻页宽度
+
+		scrollPic_02.speed          = 3; //移动速度(单位毫秒，越小越快)
+		scrollPic_02.space          = 50; //每次移动像素(单位px，越大越快)
+		scrollPic_02.autoPlay       = true; //自动播放
+		scrollPic_02.autoPlayTime   = 3; //自动播放间隔时间(秒)
+
+		scrollPic_02.initialize(); //初始化
+							
+		//--><!]]>
+</SCRIPT>
+
+</div>
+
+
+</div>
+<!--content end-->
+
+</div>
+<!--main end-->
+</div>
+<!--right end-->
+</div>
+<!--inner end-->
+<div class="clearfix"></div>
+
+</div>
+<!--body end-->
+<div class="clearfix"></div>
+<!--footer start-->
+<div id="footer">
+<div class="inner">
+$web_BottomHTML$
+</div>
+</div>
+<!--footer end -->
+
+
+</div>
+<script type="text/javascript" src="/js/ServiceCenter.js"></script>
+
+</body>
+</html>
+<!--
+Powered By HituxCMS ASP V2.1   
+-->
+
+
+
+

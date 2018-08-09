@@ -1,0 +1,1 @@
+﻿document.write("<a href='http://www.huiguer.com/' target='_blank' title='huiguer3'><img src='/images/up_images/2.jpg'  width='980' height='300' ></a>")

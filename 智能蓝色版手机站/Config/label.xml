@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="gb2312"?>
+<labeltemplate>
+   <label name="rollup">
+    <![CDATA[
+	     <div id="Roll{$LabelID}" style="{$BackGround}overflow:hidden; width:{$Width}px; height:{$Height}px;" > 
+		 <div id="Roll{$LabelID}1">
+			{$ImgStr}
+		 </div>
+		<div id="Roll{$LabelID}2" style="overflow:hidden; height:{$Height}px"></div>
+		</div>
+		<script language="javascript" type="text/javascript">
+		<!--
+		var upspeed{$LabelID} = {$Speed};
+		document.getElementById("Roll{$LabelID}2").innerHTML = document.getElementById("Roll{$LabelID}1").innerHTML;
+		function MarqueeUP{$LabelID}(){
+		if(document.getElementById("Roll{$LabelID}2").offsetHeight-document.getElementById("Roll{$LabelID}").scrollTop<=0)
+		document.getElementById("Roll{$LabelID}").scrollTop-=document.getElementById("Roll{$LabelID}1").offsetHeight
+		else{
+		  document.getElementById("Roll{$LabelID}").scrollTop++
+		 }
+		 }
+		 var MyMarUP{$LabelID} = setInterval(MarqueeUP{$LabelID}, upspeed{$LabelID})
+		 document.getElementById("Roll{$LabelID}").onmouseover=function() {clearInterval(MyMarUP{$LabelID})}
+		 document.getElementById("Roll{$LabelID}").onmouseout=function() {MyMarUP{$LabelID}=setInterval(MarqueeUP{$LabelID},upspeed{$LabelID})}
+		 //-->
+		</script>
+	]]>
+   </label>
+   <label name="rolldown">
+    <![CDATA[
+	   <div id="Roll{$LabelID}" style="{$BackGround}overflow:hidden; width:{$Width}px; height:{$Height}px;">
+	   <div id="Roll{$LabelID}1" style="height:{$Height}px">
+		{$ImgStr}
+	   </div>
+	   <div id="Roll{$LabelID}2" style="height:{$Height}px"></div>
+	   </div>
+	   <script language="javascript" type="text/javascript">
+	   <!--
+		 var downspeed{$LabelID} = {$Speed};
+		 document.getElementById("Roll{$LabelID}2").innerHTML = document.getElementById("Roll{$LabelID}1").innerHTML;
+		 document.getElementById("Roll{$LabelID}").scrollTop = document.getElementById("Roll{$LabelID}").scrollHeight
+		 function MarqueeDown{$LabelID}(){
+			  if(document.getElementById("Roll{$LabelID}1").offsetTop-document.getElementById("Roll{$LabelID}").scrollTop>=0)
+				document.getElementById("Roll{$LabelID}").scrollTop+=document.getElementById("Roll{$LabelID}2").offsetHeight
+			 else{
+			 document.getElementById("Roll{$LabelID}").scrollTop--
+			 }}
+		var MyMardown{$LabelID} = setInterval(MarqueeDown{$LabelID}, downspeed{$LabelID})
+		document.getElementById("Roll{$LabelID}").onmouseover=function() {clearInterval(MyMardown{$LabelID})}
+		document.getElementById("Roll{$LabelID}").onmouseout=function() {MyMardown{$LabelID}=setInterval(MarqueeDown{$LabelID},downspeed{$LabelID})}
+		//-->
+	 </script>
+	]]>
+   </label>
+   <label name="rollleft">
+   <![CDATA[
+           <div id="Roll{$LabelID}" style="{$BackGround}overflow:hidden;height:{$Height}px;width:{$Width}px;">
+		   <table align="left" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+			  <td id="Roll{$LabelID}1">
+				{$ImgStr}
+			  </td>
+			  <td id="Roll{$LabelID}2"></td>
+			</tr>
+			</table>
+		 </div>
+		  <script laguage="javascript" type="text/javascript">
+		   <!--
+			var leftspeed{$LabelID} = {$Speed};
+			document.getElementById("Roll{$LabelID}2").innerHTML = document.getElementById("Roll{$LabelID}1").innerHTML;
+			function MarqueeLeft{$LabelID}(){
+			if(document.getElementById("Roll{$LabelID}2").offsetWidth-document.getElementById("Roll{$LabelID}").scrollLeft<=0)
+			document.getElementById("Roll{$LabelID}").scrollLeft-=document.getElementById("Roll{$LabelID}1").offsetWidth
+			else{
+			 document.getElementById("Roll{$LabelID}").scrollLeft++
+			}}
+			var MyMarleft{$LabelID} = setInterval(MarqueeLeft{$LabelID}, leftspeed{$LabelID})
+			document.getElementById("Roll{$LabelID}").onmouseover=function() {clearInterval(MyMarleft{$LabelID})}
+			document.getElementById("Roll{$LabelID}").onmouseout=function() {MyMarleft{$LabelID}=setInterval(MarqueeLeft{$LabelID},leftspeed{$LabelID})}
+			//-->
+		 </script>
+   ]]>
+   </label>
+   <label name="rollright">
+   <![CDATA[
+   		<div id="Roll{$LabelID}" style="{$BackGround}overflow:hidden;height:{$Height}px;width:{$Width}px;">
+		<table align=""left"" cellpadding="0" cellspacing="0" border="0">
+		 <tr>
+		  <td id="Roll{$LabelID}1" valign="top">
+			{$ImgStr}
+		</td><td id="Roll{$LabelID}2" valign="top"></td></tr></table></div>
+		<script language="javascript" type="text/javascript">
+		 <!--
+		 var rightspeed{$LabelID} = {$Speed};
+		 document.getElementById("Roll{$LabelID}2").innerHTML = document.getElementById("Roll{$LabelID}1").innerHTML;
+		 document.getElementById("Roll{$LabelID}").scrollLeft = document.getElementById("Roll{$LabelID}").scrollWidth;
+		 function MarqueeRight{$LabelID}(){
+		  if(document.getElementById("Roll{$LabelID}").scrollLeft<=0)
+			document.getElementById("Roll{$LabelID}").scrollLeft+=document.getElementById("Roll{$LabelID}2").offsetWidth
+		 else{
+			 document.getElementById("Roll{$LabelID}").scrollLeft--
+		    }}
+		 var MyMarRight{$LabelID} = setInterval(MarqueeRight{$LabelID}, rightspeed{$LabelID})
+		 document.getElementById("Roll{$LabelID}").onmouseover=function() {clearInterval(MyMarRight{$LabelID})}
+		 document.getElementById("Roll{$LabelID}").onmouseout=function() {MyMarRight{$LabelID}=setInterval(MarqueeRight{$LabelID},rightspeed{$LabelID})}
+		 //-->
+	 </script>
+   ]]>
+   </label>
+   <label name="rollvertical">
+   <![CDATA[
+   
+   <div id="scrollWrap" style="width:{$Width}px;height: {$Height}px;overflow: hidden;"> 
+	<div id="scrollMsg" style="text-align: left;padding:0 10px;"> 
+	 <ul style="padding:0px;margin:0px;"> 
+	{$LoopStr}
+	 </ul> 
+	</div> 
+	</div> 
+	 
+	<script type="text/javascript" language="javascript"> 
+	<!-- 
+	try{ 
+	 var isStoped = false; 
+	 var oScroll = document.getElementById("scrollWrap"); 
+	 with(oScroll){ 
+	 noWrap = true; 
+	 } 
+	 
+	 oScroll.onmouseover = new Function('isStoped = true'); 
+	 oScroll.onmouseout = new Function('isStoped = false'); 
+	 
+	 var preTop = 0; 
+	 var curTop = 0; 
+	 var stopTime = 0; 
+	 var oScrollMsg = document.getElementById("scrollMsg");
+	 
+	 oScroll.appendChild(oScrollMsg.cloneNode(true)); 
+	 init_srolltext(); 
+	}catch(e) {} 
+	 
+	function init_srolltext(){ 
+	 oScroll.scrollTop = 0; 
+	 setInterval('scrollUp()', 15); 
+	} 
+	 
+	function scrollUp(){ 
+	 if(isStoped) return; 
+	 curTop += 1; 
+	 if(curTop == 19) { 
+	 stopTime += 1; 
+	 curTop -= 1; 
+	 if(stopTime == 180) { 
+	 curTop = 0; 
+	 stopTime = 0; 
+	 } 
+	 }else{ 
+	 preTop = oScroll.scrollTop; 
+	 oScroll.scrollTop += 1; 
+	 if(preTop == oScroll.scrollTop){ 
+	 oScroll.scrollTop = 0; 
+	 oScroll.scrollTop += 1; 
+	 } 
+	 } 
+	} 
+	//--> 
+	</script> 
+	   
+   
+   ]]>
+   </label>
+   <label name="flashplayer">
+   <![CDATA[
+        <script src="{$WebUrl}KS_Inc/FlashPlayer.js" language="javascript"></script>
+		  <table width="{$Width}" height="{$Height}"  border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+		  <tr>
+		    <td align="center" bgcolor="#f1f1f1">
+		     <object id="movie" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase= "http://download.macromedia.com/pub/ shockwave/cabs/flash/swflash.cab#version=7,0,0,0" align="middle">
+		      <param name="movie" value="about:blank" />
+		      <param name="quality" value="high" />
+		    </object>
+		    </td>
+		  </tr>
+		  </table>
+		  <table width="{$Width}" border="0" align="center" cellpadding="0" cellspacing="0">
+		  <tr>
+		    <td align="center">
+		    <div oncontextmenu="return false" onselectstart="return false">
+		      <div style="padding:0">
+		        <table width="{$Width}" border="0" align="center" cellpadding="0" cellspacing="0" style="width:{$Width}px;height:35px;vertical-align:bottom">
+		                  <tr>
+		                    <td style=""><table height="5" style="border:0px solid #333333;width:100%;background:url({$WebUrl}Images/Default/Barbg.gif);" cellpadding="1" cellspacing="0">
+		                      <tr>
+		                        <td id="bar" bgcolor="#FF6600" width="0" style="text-align:left;vertical-align:left;height:8px;" onmousedown="Jump(total*event.offsetX/500|0)"></td>
+		                        <td width="100%"></td>
+		                      </tr>
+		                    </table></td>
+		                    <td style="text-align:right;width:60px;font:11px Tahoma" id="frameCount"></td>
+		                  </tr>
+		                </table>
+		        <span id="PlayerButtons"> <img onclick="Rewind();"  style="cursor:pointer"  title="跳至第一帧" text="9" src="{$WebUrl}Images/Default/dd1.gif" /> 
+		  <img onclick="Back();"  style="cursor:pointer" title="快退"  src="{$WebUrl}Images/Default/dd2.gif"/> 
+		  <img onclick="Play();" title="播放"   style="cursor:pointer" src="{$WebUrl}Images/Default/dd3.gif"/> 
+		  <img onclick="Pause();" style="cursor:pointer" title="暂停"  src="{$WebUrl}Images/Default/dd4.gif"/> 
+		  <img onclick="Stop();"  style="cursor:pointer" title="停止"  src="{$WebUrl}Images/Default/dd5.gif" /> 
+		  <img onclick="Forward();" title="快进"  style="cursor:pointer" src="{$WebUrl}Images/Default/dd6.gif" /> 
+		  <img onclick="GoToEnd();"  style="cursor:pointer" title="跳至最末帧"  src="{$WebUrl}Images/Default/dd7.gif"/> 
+		  <img onclick="Replay();" title="重放"  style="cursor:pointer" src="{$WebUrl}Images/Default/dd8.gif" /> 
+		  <img onclick="FullScreen();"  style="cursor:pointer" title="全屏播放" src="{$WebUrl}Images/Default/dd9.gif" /> </span></div>
+		    </div></td>
+		  </tr>
+		  </table>
+		  <script defer>
+		  var movie=document.getElementById("movie");
+		  LoadFlashUrl("{$FlashUrl}","{$Width}","{$Height}");
+		  </script>
+   ]]>
+   </label>
+</labeltemplate>

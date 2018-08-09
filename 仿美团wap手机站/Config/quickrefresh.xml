@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="gb2312"?>
+<item>
+	<fsoitem isfinish="1" id="1" channelid="0">
+		<name><![CDATA[专题首页]]></name>
+		<fsotype>1000</fsotype>
+	</fsoitem>
+	<fsoitem isfinish="1" id="2" channelid="0">
+		<name><![CDATA[专题分类]]></name>
+		<fsotype>1001</fsotype>
+	</fsoitem>
+	<fsoitem isfinish="1" id="3" channelid="0">
+		<name><![CDATA[专题页]]></name>
+		<fsotype>1002</fsotype>
+	</fsoitem>
+</item>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<field>
+ <template><![CDATA[{@TemplateDir}/商城系统/筛选模板.html]]></template>
+ <isrewrite>0</isrewrite>
+ <maxperpage>20</maxperpage>
+ <item name="tid" enabled="true">
+  <title>分类</title>
+  <fieldname>tid</fieldname>
+  <fieldtype>-1</fieldtype>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item name="price_member" enabled="true">
+  <title>商城价</title>
+  <fieldname>price_member</fieldname>
+  <fieldtype>-1</fieldtype>
+  <condition>fw</condition>
+  <showvalue>0-10元,10-100元,100-300元,300-500元,500-1000元,1000元以上</showvalue>
+  <searchvalue>0-10,10-100,100-300,300-500,500-1000,1000-100000</searchvalue>
+ </item>
+ <item name="brandid" enabled="true">
+  <title>品牌</title>
+  <fieldname>brandid</fieldname>
+  <fieldtype>-1</fieldtype>
+  <condition>dys</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item  name="title" enabled="false">
+  <title>商品名称</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>title</fieldname>
+  <condition>dy</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <orderitem name="id" enabled="true">
+  <uptitle>按商品ID升序</uptitle>
+  <downtitle>按商品ID降序</downtitle>
+ </orderitem>
+ <orderitem name="adddate" enabled="true">
+  <uptitle>按添加时间升序</uptitle>
+  <downtitle>按添加时间降序</downtitle>
+ </orderitem>
+ <optionitem  name="1">
+  <title>所有商品</title>
+  <sqlparam><![CDATA[1=1]]></sqlparam>
+ </optionitem>
+ <optionitem  name="2">
+  <title>推荐商品</title>
+  <sqlparam><![CDATA[recommend=1]]></sqlparam>
+ </optionitem>
+ </field>

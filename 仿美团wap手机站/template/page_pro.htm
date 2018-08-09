@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" type="text/css" href="{$GetInstallDir}imag/css.css">
+
+<title>{$GetArticleTitle} {$GetClassName} {$GetSiteName}</title>
+<meta name="keywords" content="{$GetClass_Meta_KeyWord}{$GetMetaKeyWord}">
+<meta name="description" content="{$GetClass_Meta_Description}{$GetMetaDescript}">
+
+</head>
+
+<body>
+{LB_头部}
+<div class="title"><a href="{$GetClassUrl}" class="y">{$GetClassName}</a></div>
+<h1>{$GetArticleTitle}</h1>
+<div class="lai">来源：{$GetSiteName} 点击：{$GetHits}</div>
+<div class="imag">
+{=GetPhoto(75%,)}
+</div>
+<div class="title"><span class="y">店家介绍：</span></div>
+<div class="text">
+{$GetArticleContent}
+</div>
+{LB_底部}
+<script type="text/javascript" src="{$GetInstallDir}imag/jquery-1.js"></script>
+<script type="text/javascript" src="{$GetInstallDir}imag/swipeSlide.js"></script>
+<script type="text/javascript" src="{$GetInstallDir}imag/common.js"></script>
+<script type="text/javascript">
+var slider = new Swipe(document.getElementById('touchBox'), {
+    startSlide: 0,
+    speed: 500,
+    auto: 2500, 
+    callback: function(event, index, elem) { 
+		var i = bullets.length;
+					while (i--) {
+						bullets[i].className = '';
+					}
+					bullets[index].className = 'cur'; 
+    } 
+}),bullets = document.getElementById('position').getElementsByTagName('li');
+
+$(document).ready(function(){$("#indexcase").tab({tabId:"#tech",tabTag:"li",conId:"#touchCase",conTag:"dd",act:"click",effact: "scrollx",  auto:true});});
+</script>
+</body>
+</html>

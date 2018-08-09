@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="gb2312"?>
+<FieldsRule Synchronization="2">
+   <Field SpaceField="CompanyName" UserField="KS_Company"/>
+   <Field SpaceField="BusinessLicense" UserField="KS_ecc"/>
+   <Field SpaceField="ContactMan" UserField="RealName"/>
+   <Field SpaceField="Province" UserField="Province"/>
+   <Field SpaceField="City" UserField="City"/>
+   <Field SpaceField="Address" UserField="Address"/>
+   <Field SpaceField="WebUrl" UserField="HomePage"/>
+   <Field SpaceField="LegalPeople" UserField="RealName"/>
+   <Field SpaceField="ZipCode" UserField="Zip"/>
+   <Field SpaceField="Telphone" UserField="OfficeTel"/>
+   <Field SpaceField="Fax" UserField="Fax"/>
+</FieldsRule>

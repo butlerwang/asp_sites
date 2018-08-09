@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>$article_title$$PageNO$-$web_name$</title>
+<meta name="keywords" content="$article_keywords$">
+<meta name="description" content="$article_description$">
+<link href="/css/$web_theme$/en_inner.css" rel="stylesheet" type="text/css" />
+<link href="/css/$web_theme$/en_common.css" rel="stylesheet" type="text/css" />
+<link href="/css/$web_theme$/en_clearbox.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/submodalsource.js"></script>
+<script type="text/javascript" src="/js/en_functions.js"></script>
+<script type="text/javascript" src="/js/en_clearbox.js" ></script>
+<script type="text/javascript" src="/images/iepng/iepngfix_tilebg.js"></script>
+<script type="text/javascript">  
+function  addFav() {   //�����ղؼ�   
+             if  (document.all) {   
+                window.external.addFavorite('$web_url$$article_url$', '$article_title$');   
+            }   
+             else   if  (window.sidebar) {   
+            window.sidebar.addPanel('$article_title$', '$web_url$$article_url$',  "" );   
+            }   
+        }   
+  
+        </script>  </head>
+
+<body>
+<div id="wrapper">
+
+<!--head start-->
+<div id="head">
+
+<!--top start -->
+<div class="top">
+<div class="TopInfo"><div class="link">Language Selection: <a  href="/">Chinese</a> | <a href="/English">English</a></div>
+</div>
+<div class="clearfix"></div>
+<div class="TopLogo">
+<div class="logo"><a href="/"><img src="/images/up_images/$web_image$" alt="$web_name$"></a></div>
+<div class="tel">
+<p class="telW">HOTLINE</p>
+<p class="telN">$web_tel$</p>
+</div>
+</div>
+
+</div>
+<!--top end-->
+
+<!--nav start-->
+<div id="NavLink">
+<div class="NavBG">
+<!--Head Menu Start-->
+$web_TopMenu$
+<!--Head Menu End-->
+</div>
+<div class="clearfix"></div>
+</div>
+<!--nav end-->
+
+</div>
+<!--head end-->
+<!--body start-->
+<div id="body">
+<!--focus start-->
+<div id="InnerBanner">
+$Inner_BannerTop$
+</div>
+<!--foncus end-->
+<div class="HeightTab clearfix"></div>
+<!--inner start -->
+<div class="inner">
+<!--left start-->
+<div class="left">
+<div class="Sbox">
+<div class="topic">$ClassName1$&nbsp;&nbsp;&nbsp;</div>
+<div class="ClassNav">
+<div class="NavTree">
+$Block_LeftClassList$
+</div>
+</div>
+
+</div>
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic">What's Hot&nbsp;&nbsp;&nbsp;</div>
+<div class="list">
+$Block01_LeftItem$
+</div>
+
+</div>
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic">Contact Us&nbsp;&nbsp;&nbsp;</div>
+<div class="txt ColorLink">
+$web_consult$</div>
+</div>
+
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic">Search&nbsp;&nbsp;&nbsp;</div>
+<div class="SearchBar">
+<form method="get" action="$search_FolderName$/index.asp">
+				<input type="text" name="q" id="search-text" size="15" onBlur="if(this.value=='') this.value='Input Keywords...';" 
+onfocus="if(this.value=='Input Keywords...') this.value='';" value="Input Keywords..." /><input type="submit" id="search-submit" value=" GO " />
+			</form>
+</div>
+</div>
+</div>
+<!--left end-->
+<!--right start-->
+<div class="right">
+<div class="Position"><span>Your Position: <a href="/English">Home</a> > $category_position$</span></div>
+<div class="HeightTab clearfix"></div>
+<!--main start-->
+<div class="main">
+
+<!--content start-->
+<div class="content">
+<div class="ProInfo">
+<div class="image"><a href="/images/up_images/$article_image$" rel="clearbox" title="$article_title$"><img src="/images/up_images/$article_image$"  height="270" width="270"></a></div>
+<div class="column">
+<div class="title"><h3>$article_title$</h3></div>
+<div class="infos">Update: $article_time$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View: <script language="javascript" src="/inc/en_article_view.asp?id=$article_id$"></script></div>
+<ul>
+<li><span>Brand: </span>&nbsp;&nbsp;&nbsp;$article_date$</li>
+<li><span>Type: </span>&nbsp;&nbsp;&nbsp;$article_place$</li>
+<li class='MPrice'><span>Price: </span>&nbsp;&nbsp;&nbsp;$article_wine$ RMB</li>
+<li class='NPrice'><span>Promotion: </span>&nbsp;&nbsp;&nbsp;$article_net$ RMB <span class='BuyCount'>( $OrderCount$ Customers Bought)</span></li>
+<li><a onclick="showPopWin('/English/order/?id=$article_id$', 800, 500, null);" href='#'><img src="/images/hituxblue/order_img_en.gif" alt='Order Online'></a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" onclick="addFav()" ><img src="/images/hituxblue/fav_img_en.gif" alt='Add to favorites'></a></li>
+</ul>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<div class="maincontent clearfix">
+<div class="IntroTitle">Introduction</div>
+$article_content$
+</div>
+<div class="IntroTitle">More Products</div>
+
+<div class="MorePro">
+$MorePro_List$
+</div>
+
+</div>
+
+</div>
+<!--content end-->
+
+</div>
+<!--main end-->
+</div>
+<!--right end-->
+</div>
+<!--inner end-->
+</div>
+<!--body end-->
+<div class="HeightTab clearfix"></div>
+<!--footer start-->
+<div id="footer">
+<div class="inner">
+$web_BottomHTML$
+</div>
+</div>
+<!--footer end -->
+
+
+</div>
+<script type="text/javascript">
+window.onerror=function(){return true;}
+</script>
+</body>
+</html>
+<!--
+Powered By huiguerCMS ASP V2.O   
+-->
+
+
+
+
+

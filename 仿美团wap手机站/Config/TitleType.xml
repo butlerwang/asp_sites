@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="gb2312"?>
+<TitleTypeRule>
+   <Field Name="[图文]" Color="green"/>
+   <Field Name="[组图]" Color="red"/>
+   <Field Name="[推荐]" Color="#990000"/>
+   <Field Name="[注意]" Color="#0000FF"/>
+   <Field Name="[公告]" Color="blue"/>
+   <Field Name="[视频]" Color="#ff6600" Icon="/images/video.gif"/>
+</TitleTypeRule>

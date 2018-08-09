@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<field>
+ <template><![CDATA[{@TemplateDir}/文章系统/筛选模板.html]]></template>
+ <isrewrite>0</isrewrite>
+ <maxperpage>32</maxperpage>
+ <item name="tid" enabled="true">
+  <title>按分类</title>
+  <fieldname>tid</fieldname>
+  <fieldtype>-1</fieldtype>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item  name="title" enabled="false">
+  <title>简短标题</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>title</fieldname>
+  <condition>dy</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item name="keywords" enabled="true">
+  <title>按关键字</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>keywords</fieldname>
+  <condition>like</condition>
+  <showvalue>1,2,3,4,5,6</showvalue>
+  <searchvalue>1,2,3,4,5,6</searchvalue>
+ </item>
+ <item name="author" enabled="true">
+  <title>按作者</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>author</fieldname>
+  <condition>dy</condition>
+  <showvalue>admin,kesion</showvalue>
+  <searchvalue>admin,kesion</searchvalue>
+ </item>
+ <item  name="origin" enabled="false">
+  <title>文章来源</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>origin</fieldname>
+  <condition>dy</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item name="area" enabled="true">
+  <title>按地区</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>area</fieldname>
+  <condition>dy</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item  name="intro" enabled="false">
+  <title>文章导读</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>intro</fieldname>
+  <condition>like</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <orderitem name="id" enabled="true">
+  <uptitle>按文章ID号升序</uptitle>
+  <downtitle>按文章ID号降序</downtitle>
+ </orderitem>
+ <orderitem name="adddate" enabled="true">
+  <uptitle>按添加时间升序</uptitle>
+  <downtitle>按添加时间降序</downtitle>
+ </orderitem>
+ <optionitem  name="1">
+  <title>所有信息</title>
+  <sqlparam><![CDATA[1=1]]></sqlparam>
+ </optionitem>
+ <optionitem  name="2">
+  <title>推荐信息</title>
+  <sqlparam><![CDATA[recommend=1]]></sqlparam>
+ </optionitem>
+ </field>

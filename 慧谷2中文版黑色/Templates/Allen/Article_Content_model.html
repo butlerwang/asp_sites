@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>$article_title$$PageNO$-$web_name$</title>
+<meta name="description" content="$article_description$">
+<meta name="keywords" content="$article_keywords$">
+<link href="/css/$web_theme$/style.css" rel="stylesheet" type="text/css" />
+<link href="/css/$web_theme$/inner.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/functions.js"></script>
+<script type="text/javascript" src="/images/iepng/iepngfix_tilebg.js"></script>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="/js/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 7]>
+	<div style='clear:both;text-align:center;position:relative'>
+		<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0" alt="" /></a>
+	</div>
+<![endif]-->
+</head>
+
+<body id="page2">
+<div class="body1">
+	<div class="body2">
+		<div class="body3">
+			<div class="mains">
+<!-- header -->
+				<header>
+					<div class="wrapper">
+<div class="logo"><a href="/"><img src="/images/up_images/$web_image$" alt="$web_name$"></a></div>
+ <!--nav start-->
+<div id="NavLink">
+<div class="NavBG">
+<!--Head Menu Start-->
+$web_TopMenu$
+<!--Head Menu End-->
+</div>
+<div class="clearfix"></div>
+</div>
+<!--nav end-->
+<div class="clearfix"></div>
+ 					</div>
+				</header> 
+<!-- / header-->
+<!-- content -->
+				
+<!--body start-->
+<div id="body">
+<!--focus start-->
+<div id="InnerBanner">
+$Inner_BannerTop$
+</div>
+<!--foncus end-->
+<div class="HeightTab clearfix"></div>
+<!--inner start -->
+<div class="inner">
+<!--left start-->
+<div class="left">
+<div class="Sbox">
+<div class="topic">$ClassName1$&nbsp;&nbsp;&nbsp;$ClassFolder1$</div>
+<div class="blank">$Block_LeftClassList$</div>
+</div>
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic">最新资讯&nbsp;&nbsp;&nbsp;New</div>
+<div class="list">
+$Block01_LeftItem$
+</div>
+
+</div>
+<div class="HeightTab clearfix"></div>
+<div class="Sbox">
+<div class="topic">搜索&nbsp;&nbsp;&nbsp;Search</div>
+<div class="SearchBar">
+<form method="get" action="$search_FolderName$/index.asp">
+				<input type="text" name="q" id="search-text" size="15" onBlur="if(this.value=='') this.value='请输入关键词';" 
+onfocus="if(this.value=='请输入关键词') this.value='';" value="请输入关键词" /><input type="submit" id="search-submit" value="搜索" />
+			</form>
+</div>
+</div>
+</div>
+<!--left end-->
+<!--right start-->
+<div class="right">
+<div class="Position"><span>你的位置：<a href="/">首页</a> > $category_position$</span></div>
+<div class="HeightTab clearfix"></div>
+<!--main start-->
+<div class="main">
+
+<!--content start-->
+<div class="content">
+<div class="title"><h3>$article_title$</h3></div>
+<div class="infos">$article_time$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击：<script language="javascript" src="/inc/article_view.asp?id=$article_id$"></script></div>
+<div class="maincontent clearfix">
+$article_content$
+$PageList$
+</div>
+$Article_Downloads$
+
+<div class="prenext">
+$article_next$
+</div>
+
+</div>
+<!--content end-->
+
+</div>
+<!--main end-->
+</div>
+<!--right end-->
+</div>
+<!--inner end-->
+<div class="HeightTab clearfix"></div>
+</div>
+<!--body end-->
+        
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- / content -->
+	<!-- Dark Footer -->
+		<div id="dark_footer_wrap">
+			<div id="dark_footer">
+            
+$web_BottomMenu$ 
+			</div>
+		</div>
+		<!-- // Dark Footer -->
+
+<div class="mains">
+
+<!-- footer -->
+	<footer>
+$web_BottomHTML$	</footer>
+<!-- / footer -->
+</div>
+
+</body>
+<script type="text/javascript">
+window.onerror=function(){return true;}
+</script>
+</html>

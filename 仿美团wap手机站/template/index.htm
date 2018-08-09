@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" type="text/css" href="{$GetInstallDir}imag/css.css">
+<title>{$GetSiteName}</title>
+<meta name="keywords" content="{$GetClass_Meta_KeyWord}{$GetMetaKeyWord}">
+<meta name="description" content="{$GetClass_Meta_Description}{$GetMetaDescript}">
+<link rel="stylesheet" href="{$GetInstallDir}imag/9795413.css">
+<script src="{$GetInstallDir}imag/10053982.js"></script>
+<script src="{$GetInstallDir}imag/8929348.js"></script>
+</head>
+<body>
+{LB_头部}
+<div class="huandeng">
+<section class="indexPhoto"> 
+ <div class="gallery clearfix" style="overflow-x: hidden; overflow-y: hidden; ">
+            <ul style="width: 2600px; transition-duration: 0s; transform: translate(-325px, 0px);">
+{LB_首页幻灯}
+                                            </ul>
+        </div>
+        <div class="ctrls">
+            <div class="imgPageBtn imgPageBtn-l"></div>
+            <ul>
+            <li class="current"></li>
+            <li class=""></li>
+            <li class=""></li>
+            </ul>
+            <div class="imgPageBtn"></div>
+        </div>
+    </section>
+
+<script>
+    scrollTo(0,1);
+    //导航
+    NTUI.htmlHelper.navigator();
+    tpl={};
+    tpl.cateEntry = '进入<#=cname#>频道';
+    //栏目数据 & 资讯模块滑动
+    var topicHolder = X('.topNews>nav>ul'),cateEntry = X('.newsList .cateEntry'),slideHolder = X('.newsList'),ns;
+    for(i=0;i<topicHolder.length;i++){
+        ns = new NTUI.slide(slideHolder[i],{onTouchEnd:slideHandler,slideIndex:i});
+        ns.cateEntry = cateEntry[i];
+        ns.topics = topicHolder[i];
+        topicHolder[i].slide = slideHolder[i].slide = ns;
+    }
+    //资讯模块滑动事件处理
+    function slideHandler(e,cp,preP){
+        var t = this,cLi = t.topics.children[cp],tid=cLi.getAttribute('tid');
+        X(t.topics.children).removeClass('current');
+        cLi.className='current';
+        t.cateEntry.innerHTML =  NTUI.simpleParse(tpl.cateEntry,{cname:cLi.getAttribute('cname')});
+        t.cateEntry.href = 'http://3g.163.com/touch/'+cLi.getAttribute('curl');+'/?from=index';
+        if(cp!==preP){
+            if(t.options.slideIndex)NTUI.scrollToEl(t.topics);	//fix the position of the 1st module
+        }
+    }
+    //栏目头点击跳转
+    topicHolder.click(function(e){
+        var t = e.target;
+        while(t.tagName !== 'LI'){
+            t=t.parentNode;
+        }
+        if(t.className!=='current'){
+            var _ntes_a_t,_ntes_a_h,_ntes_p_url = 'http%3A//3g.163.com/touch/',
+                    _ncw = screen.width,
+                    _nmx = e.clientX,
+                    _nmy = e.clientY+ document.body.scrollTop||document.documentElement.scrollTop;
+            X(this.children).removeClass('current');
+            t.className = 'current';
+            var cp = t.getAttribute('page'),tid=t.getAttribute('tid'),s=this.slide;
+            s.cateEntry.innerHTML =  NTUI.simpleParse(tpl.cateEntry,{cname:t.getAttribute('cname')});
+            s.cateEntry.href = 'http://3g.163.com/touch/'+t.getAttribute('curl');+'/?from=index';
+            _ntes_a_t = encodeURI(X(t).find('span').html());			_ntes_a_h = t.getAttribute('curl');
+            this.slide.slideToPage(cp,'.5');
+            var _ntes_p_q = '_nacc=' + _ntes_nacc + '&_npurl=' + _ntes_p_url + '&_nah=' + _ntes_a_h + '&_nat=' + _ntes_a_t+ '&_ncw=' + _ncw + '&_nmx=' + _nmx + '&_nmy=' + _nmy + '&_end';
+            NTUI.importJs('http://analytics.163.com/ntes_p?' + _ntes_p_q);
+        }
+    });
+    //图集
+    var photoCtrls = X('.indexPhoto .ctrls li'),imgPageBtn = X('.imgPageBtn'),
+            gallerySlide = new NTUI.slide(X('.gallery')[0],{
+                onTouchEnd:function(e,cp){
+                    photoCtrls.removeClass('current');
+                    photoCtrls[cp].className = 'current';
+                }
+            });
+    imgPageBtn.click(function(){
+        if(this.className.indexOf('imgPageBtn-l')===-1){
+            gallerySlide.next(0.4,1);
+        }
+        else{
+            gallerySlide.prev(0.4,1);
+        }
+    });
+    mask.style.display = 'none';
+    X('.topNews,body>footer').css({display:'block'});
+    loading=false;
+    //搜索模块
+    var searchForm = X('#searchForm'),searchText = X('#searchText'),searchBtn = X('#searchBtn'),searchDefault;
+    searchDefault = searchText.attr('data');
+    (function(searchDefault){
+        var v = searchDefault[0].split(','),
+                i = Math.floor(Math.random()*v.length);
+        searchText.attr('value',v[i]);
+    })(searchDefault);
+    searchBtn.click(function(){
+        doSearch();
+    });
+    searchForm.submit(function(){
+        doSearch();
+        return false;
+    });
+    function doSearch(){
+        var ls = window.localStorage,v = searchText.attr('value');
+        if(ls){
+            ls.setItem('3g.163.touch.searchvalue',v);
+            searchForm[0].submit();
+        }
+    }
+    //应用模块tab
+    var appViews = X('.apps-view-4>div'),appNavs = X('.apps nav li');
+    appNavs.click(function(e){
+        if(this.className !== 'current'){
+            appNavs.removeClass('current');
+            appViews.removeClass('current');
+            this.className = 'current';
+            appViews[this.getAttribute('index')].className='current';
+        }
+    });
+    //读取应用数据
+    var appHolder = X('.apps-view-4>div>ul'),platform='other'
+    ,isAndroid=navigator.userAgent.match(/android/ig)
+    ,appUrl = 'http://3g.163.com/touch/app/cpsSoftware/12.html';
+    if(isAndroid){
+        X('.apps').css({display:'block'});
+        var titleHolder = X('.apps>nav li span');
+        titleHolder[0].innerHTML = '热门游戏推荐';
+        NTUI.importJs(appUrl);
+    }
+    var appLi = '<a href="/m/android/software/<#=id#>.html#from=t"><img src="<#=icon#>"/><span><#=name#></span></a>';
+    function appList(d){
+        if(!d)return;
+        var i=j=0,apps,app,tmp;
+        tmp='';
+        for(j=0;j<d.length;j++){
+            if(j%4===0){tmp+='<li>'}
+            app = d[j];
+            tmp += NTUI.simpleParse(appLi,{icon:app.icon,id:app.id,name:app.name});
+            if(j%4===3){tmp+='</li>'}
+        }
+        appHolder[0].innerHTML = tmp;
+        new NTUI.slide(appViews[0],{wrapperW:window.innerWidth*0.92});
+        X('.apps').css({display:'block'});
+    }
+    //广告
+    var adHolder=X('.ad'),tpl_textad = '<a class="text-ad" href="<#=url#>"><#=title#></a>',adUrl = 'http://3g.163.com/touch/ad/touch/homepage/ad.html';
+    function adList(d){
+        if(!d)return;
+        var i=j=adIndex=0,el;
+        for(var k in d){
+            adIndex = 0;
+            ads = d[k];
+            if(ads.size>1){
+                adIndex = Math.floor(Math.random()*ads.size);
+            }
+            ads = ads.adlist[adIndex];
+            adHolder[i++].innerHTML = NTUI.simpleParse(tpl_textad,{url:ads.url,title:ads.title});
+        }
+    }
+    NTUI.importJs(adUrl);ntes_nacc = "wap";
+    neteaseTracker();
+</script>
+</div>
+
+
+<div class="title"><a href="{$GetInstallDir}Item/Show.asp?m=1&d=1822" class="y">公司简介</a></div>
+
+<div class="text">
+{SQL_调用基本信息(简短介绍)}
+</div>
+<div class="title"><a href="{$GetInstallDir}Item/list.asp?id=1430" class="y">产品推荐</a></div>
+
+<ul class="yydt">
+{LB_首页推荐产品}
+</ul>
+
+<ul class="yydt">
+<li class="title_dt"><a href="{$GetInstallDir}Item/list.asp?id=1433">企业快报</a></li>
+{LB_企业快报}
+</ul>
+{LB_底部}
+</body>
+</html>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="gb2312"?>
+<labeltemplate>
+
+   <label name="style4">
+    <![CDATA[
+<script type="text/javascript"> var imgArr='{$ImgArr}'.split('|');var style='4'; var introArr='{$IntroArr}'.split('|');	 var siteurl='{$GetSiteUrl}'; var totalput={$TotalPage}; var currPage=1; var iss=1;//当前张数</script>
+<script type="text/javascript" src="{$GetSiteUrl}ks_inc/photo.js"></script>
+<div class="imagelist">
+ <div class="imagetop">共 <span style="color:red">{$TotalPage}</span> 张,当前第 <span style="color:#ff6600" id="currpa">1</span> 张 <a href="javascript:prev()">上一张</a> | <a href="javascript:next()">下一张</a> <a href="javascript:;" id="playid" class="osld" onclick="playNextPic(true);">幻灯播放</a>
+<span id="displayNum"></span></div>
+ <div class="defaultimagesrc"><Img style="position:relative;" alt="{$FL_title}" onload="javascript:resizepic(this)" id="ShowLargeImg" onmouseover="upNext1(this)" src="{$DefaultImageSrc}" border="0"></div>
+ <div class="imageintro">{$DefaultImageIntro}</div>
+
+  <div class="thumb">
+    <div class="thumb_1"><span class="font-28" id="currp">1</span> / <span id="zys">{$TotalPage}</span></div>
+      
+    <div class="thumb_2">
+      <div class="thumb_2_1" id="right"></div>
+         <div class="thumb_2_2" id="left"></div>
+    	  <!--缩略图开始-->
+         <div id="scrool_div">
+		  <ul id="scrool_wrap">
+			{$ShowThumbList}
+		  </ul>
+		 </div>
+        <!--缩略图结束-->
+      </div>
+  </div>
+</div>
+	]]>
+   </label>
+   <label name="style1">
+    <![CDATA[
+ <script type="text/javascript"> var lefturl  = '{$PrevUrl}';var style='1';var righturl = '{$NextUrl}'; var siteurl  = '{$GetSiteUrl}'; var iss={$CurrPage};//当前张数</script>
+  <script type="text/javascript" src="{$GetSiteUrl}ks_inc/photo.js"></script>
+<div class="imagelist">
+ <div class="imagetop">共 <span style="color:red">{$TotalPage}</span> 张,当前第 <span style="color:#ff6600">{$CurrPage}</span> 张 <a href="{$PrevUrl}" target="_self">上一张</a> | <a href="{$NextUrl}" target="_self">下一张</a> <a href="javascript:;" id="playid" class="osld" onclick="playNextPic(true);">幻灯播放</a>
+<span id="displayNum"></span></div>
+ <div class="defaultimagesrc"><Img style="position:relative;" alt="{$FL_title}" onload="javascript:resizepic(this)" onmouseover="upNext(this)" src="{$DefaultImageSrc}" border="0"></div>
+ <div class="imageintro">{$DefaultImageIntro}</div>
+
+  <div class="thumb">
+    <div class="thumb_1"><span class="font-28">{$CurrPage}</span> / <span id="zys">{$TotalPage}</span></div>
+      
+    <div class="thumb_2">
+      <div class="thumb_2_1" id="right"></div>
+         <div class="thumb_2_2" id="left"></div>
+    	  <!--缩略图开始-->
+      <div id="scrool_div">
+		  <ul id="scrool_wrap">
+			{$ShowThumbList}
+		  </ul>
+		</div>
+      <!--缩略图结束-->
+      </div>
+  </div>
+</div>
+	]]>
+</label>
+   
+   <label name="style2">
+    <![CDATA[
+		<div class="imggrouplist">
+		 <ul>
+		  {$ShowGroupList}
+		 </ul>
+		</div>
+		{$ShowPage}
+		
+	<link href="{$GetSiteUrl}ks_inc/highslide/highslide.css" type=text/css rel=stylesheet>
+	<script type="text/javascript" src="{$GetSiteUrl}ks_inc/highslide/highslide.js"></script>
+	<script type="text/javascript">
+		hs.graphicsDir = '{$GetSiteUrl}ks_inc/highslide/graphics/';
+		hs.transitions = ['expand', 'crossfade'];
+		hs.wrapperClassName = 'dark borderless floating-caption';
+		hs.fadeInOut = true;
+		hs.dimmingOpacity = .75;
+		if (hs.addSlideshow) hs.addSlideshow({
+			interval: 5000,
+			repeat: false,
+			useControls: true,
+			fixedControls: 'fit',
+			overlayOptions: {
+				opacity: .6,
+				position: 'bottom center',
+				hideOnMouseOut: true
+			}
+		});
+	</script>
+	]]>
+   </label>
+      <label name="style3">
+    <![CDATA[
+	    <div class="imglist">
+	    {$ShowImgList}
+	    </div>
+		<script type="text/javascript" src="{$GetSiteUrl}ks_inc/jquery.scrollLoading.js"></script>
+		<script type="text/javascript"> 
+		$(function() {
+			$(".scrollLoading").scrollLoading();	
+		});
+		</script>
+
+	    {$ShowPage}
+	]]>
+   </label>
+   
+    <label name="style5">
+    <![CDATA[
+	     <style type="text/css">
+		  #picturebox {
+				MARGIN-TOP: 20px; WIDTH: 706px;margin:0 auto;
+			}
+			#picturebox #anl2 #msgDiv {
+				MARGIN-TOP: -90px; DISPLAY: none; Z-INDEX: 999; BACKGROUND: #fff;  OVERFLOW: visible; PADDING-TOP: 5px; POSITION: absolute; TEXT-ALIGN: center
+			}
+			#picturebox #anl2 #msgDiv IMG {
+				PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+			}
+			#picturebox #anl2 #msgDiv .a1 {
+				MARGIN-TOP: 1px; MARGIN-RIGHT: 20px; TEXT-ALIGN: right
+			}
+			#picturebox #anl2 #msgDiv .a1 A {
+				COLOR: #000
+			}
+			#picturebox #anl2 #bgDiv {
+				DISPLAY: none; Z-INDEX: 99; RIGHT: 0px; FILTER: alpha(opacity=10); LEFT: 0px; POSITION: absolute; TOP: 0px; BACKGROUND-COLOR: #777; -moz-opacity: 0.8; opacity: 0.8
+			}
+			#picturebox .picbig{width:530px;height:395px}
+			#picturebox #anl2 {
+				BACKGROUND: url({$GetInstallDir}images/default/a30.gif) repeat-y
+			}
+			
+			#picturebox #anl2 .icontent {
+				HEIGHT: 422px
+			}
+			#picturebox #anl2 .icontent .L {
+				DISPLAY: block; BACKGROUND: url({$GetInstallDir}images/default/a43.gif); FLOAT: left; WIDTH: 540px; HEIGHT: 405px
+			}
+			#picturebox #anl2 .icontent .L DIV {
+				MARGIN-TOP: 5px; PADDING-LEFT: 5px
+			}
+			#picturebox #anl2 .icontent .R {
+				DISPLAY: block; BACKGROUND: #211403; FLOAT: left; MARGIN-LEFT: 10px; WIDTH: 140px; HEIGHT: 405px
+			}
+			#picturebox #anl2 .icontent .R .pic_chang {
+				MARGIN-BOTTOM: 3px; OVERFLOW: hidden; HEIGHT: 311px; TEXT-ALIGN: center
+			}
+			#picturebox #anl2 .icontent .R .pic_chang LI {
+				MARGIN-BOTTOM: 12px; CURSOR: pointer
+			}
+			#picturebox #anl2 .icontent .R .sel IMG {
+				BORDER-RIGHT: #f8eadc 3px solid; PADDING-RIGHT: 0px; BORDER-TOP: #f8eadc 3px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #f8eadc 3px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #f8eadc 3px solid
+			}
+			#picturebox #anl2 .icontent .R IMG {
+				PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+			}
+			#picturebox #anl2 .icontent .R .icon1 {
+				MARGIN-TOP: 10px; MARGIN-BOTTOM: 5px; TEXT-ALIGN: center
+			}
+			#picturebox #anl2 .icontent .R .icon2 {
+				TEXT-ALIGN: center
+			}
+
+		 </style>
+	     <DIV id="picturebox">
+		  <DIV id=anl2>
+			<DIV class=icontent>
+						<div id="bgDiv"></div>
+						<div id="msgDiv">
+							<div  id="picbiger"><img src="{$DefaultImageSrc}"/></div>
+							<div class="a1"><a href="javascript:void(0)" onClick="showDetail3()">关闭</a></div>
+						</div>
+						<script type="text/javascript"> 
+						function showDetail1() { 
+						//背景
+						  var bgObj=document.getElementById("bgDiv");
+						  bgObj.style.width =  document.body.clientWidth + "px";
+						  bgObj.style.height = document.body.clientHeight + "px";
+						  }
+						  function showDetail2() { 
+						  $('#bgDiv').show();
+						  $('#msgDiv').show();
+						  }
+							function showDetail3() { 
+						  $('#bgDiv').hide();
+						  $('#msgDiv').hide();
+						  }
+						  setInterval('showDetail1()',100);
+						</script>
+						<DIV id=c1>
+							<SPAN class=L><DIV><A id=picbig onclick=showDetail2() href="javascript:void(0)"><IMG src="{$DefaultImageSrc}" class="picbig"></A></DIV>
+							</SPAN>
+							<SPAN class=R>
+								<DIV class=icon1 onmousedown=scroll(-3) onmouseover=scroll(-3) onmouseout=scroll(0)><IMG src="{$GetInstallDir}images/default/a48.gif"></DIV>
+										<DIV class="pic_chang" id="pic_chang">
+											<UL>
+											  {$ShowThumbList}
+											</UL>
+									   </DIV>
+								<DIV class=icon2 onmousedown=scroll(3) onmouseover=scroll(3) onmouseout=scroll(0)><IMG src="{$GetInstallDir}images/default/a49.gif"></DIV>
+							</SPAN>
+								  <SCRIPT type=text/javascript>
+										$("#pic_chang li").click( 
+											function (){ 
+										  $(".pic_chang li").attr("class",""); 
+										  $(this).attr("class","sel");
+										   }
+										);
+										function picchang1(pic,pic1)
+										{
+										$("#picbig img" ).attr('src',pic);
+										  $("#picbiger img").attr('src',pic1);
+										}			   
+								   function scroll(n){ 
+								   temp=n; 
+								   var News = document.getElementById("pic_chang");
+								   News.scrollTop=News.scrollTop+temp;
+								   if (temp==0) return;setTimeout("scroll(temp)",30);}
+									</SCRIPT>
+						
+						</DIV>
+		
+		  </DIV>
+		</DIV>
+		</DIV>
+	]]>
+   </label>
+   
+   <label name="style3g">
+    <![CDATA[
+ <script type="text/javascript"> var lefturl  = '{$PrevUrl}';var righturl = '{$NextUrl}'; var siteurl  = '{$GetSiteUrl}'; var iss={$CurrPage};//当前张数</script>
+  <script type="text/javascript" src="{$GetSiteUrl}ks_inc/photo.js"></script>
+<div class="imagelist">
+ <div class="imagetop">共 <span style="color:red">{$TotalPage}</span> 张,当前第 <span style="color:#ff6600">{$CurrPage}</span> 张  <a href="javascript:;" id="playid" class="osld" onclick="playNextPic(true);">幻灯播放</a>
+<span id="displayNum"></span></div>
+ <div class="defaultimagesrc"><Img alt="{$FL_title}"  onmouseover="upNext(this)" src="{$DefaultImageSrc}" border="0"></div>
+ <div class="imageintro">{$DefaultImageIntro}</div>
+
+  <div style="text-align:center"><a href="{$PrevUrl}" target="_self">上一张</a> | <a href="{$NextUrl}" target="_self">下一张</a></div>
+</div>
+	]]>
+</label>
+</labeltemplate>

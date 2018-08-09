@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="gb2312"?>
+<guestbook date="2012-7-31 16:47:16" todaynum="0" yesterdaynum="0" maxdaynum="53" topicnum="113" postnum="27" maxonline="1" maxonlinedate="2012-6-28 16:14:00" totalusernum="26" newreguser="text07">
+	<template name="error1">您是游客,您没有进入本版面的权限。</template>
+	<template name="error2">对不起,认证版面，只有有效期内的会员才可以进入，您的账户已过期，无权进入!</template>
+	<template name="error3">
+		<![CDATA[
+		很抱歉，本版面要求用户达到{$Tips},才可以进入浏览或发帖。您当前可用{$CurrTips}！
+        ]]>
+	</template>
+	<template name="error4">
+		<![CDATA[
+		  很抱歉，本版面限制每个用户每天只能发表<span>{$LimitPostNum}</span>个主题,您已在本版面发表了<span>{$PostNum}</span>个主题，请选择其它版面！
+   ]]>
+	</template>
+	<template name="error5">
+		<![CDATA[
+		  很抱歉，本版面限制新注册会员<span>{$Minutes}</span>分钟后才可以发帖,请选择其它版面浏览或发帖！
+       ]]>
+	</template>
+	<template name="error6">很抱歉，您在本论坛被锁定,请联系本站管理员！	</template>
+	<template name="error7">
+		<![CDATA[
+ 很抱歉，您没有编辑帖子的权限！可能原因：<br/>本版面设置不允许会员自己修改帖子、此帖子不是您发表的或是您所在的级别不够！
+        ]]>
+	</template>
+	<template name="error8">很抱歉，只有登录后的会员才可以使用本站搜索功能！</template>
+	<template name="error9">很抱歉，您在本版面没有发帖的权限！</template>
+	<template name="boardclass">
+		<![CDATA[
+   		<table border="0" width="100%"  align="center" class="blist" cellpadding="0" cellspacing="0">
+			<tr><td class="boardname"><span class="closeicon" onclick="return IndexDis({$BoardID},{$OpenTF})" ><img alt="展开收起" id="img_{$BoardID}" src="{$GetInstallDir}{$GetClubInstallDir}/images/cate_{$OpenICO}.gif" /></span><a href="{$BoardUrl}">={$BoardName}=</a></td></tr>
+			<tr id="cate_{$BoardID}"{$OpenStyle}>
+			 <td>
+			   <!--boardlist-->
+			 </td>
+		   </tr>
+	  </table>
+   ]]>
+	</template>
+	<template name="board">
+		<![CDATA[
+		   <table width="99%" style="margin:5px;border-bottom:#efefef 1px dashed;margin-bottom:10px" align="center" cellpadding="0" cellspacing="0">
+			<tr>
+				{IF:"{$PhotoUrl}"<>""}
+				<td width="90" style="text-align:center"/>
+				  <div class="board_img"><a href="{$BoardUrl}"><img src="{$PhotoUrl}" border="0"/></a></div>
+				</td>
+				{/IF}
+				{IF:"{$PhotoUrl}"=""}
+				  <td width="60" style="text-align:center"/>
+				  {ElseIF:{$TodayNum}>0}
+				  <div class="photored"></div>
+				 {Else}
+				  <div class="photogray"></div>
+				 {/ElseIf}
+				  </td>
+				{/IF}
+				
+				<td class="newlink">
+				<a href="{$BoardUrl}">『 {$BoardName} 』</a> (今日: {ElseIF:{$TodayNum}>0}
+				  <span style="color:red">{$TodayNum}</span>
+				 {Else}
+				  {$TodayNum}
+				 {/ElseIf})
+				<p class="intro">{$Intro}</p>
+				<span>版主：{$Master}  | 主题：{$TotalSubject}   |  帖数：{$TotalReply} </span></td>
+				<td class="newsub">{$NewTopic}<br />
+				    <span>{$LastPostUser}</span> {$LastPostTime}
+                </td>
+			</tr>		
+			</table>
+   ]]>
+	</template>
+	<template name="board1">
+		<![CDATA[
+		    {IF:"{$PhotoUrl}"<>""}
+			  <div class="board_img"><a href="{$BoardUrl}"><img src="{$PhotoUrl}" border="0"/></a></div>
+			{/IF}
+			{IF:"{$PhotoUrl}"=""}
+			   <div class="board_ico">
+		         {ElseIF:{$TodayNum}>0}
+				  <div class="photored"></div>
+				 {Else}
+				  <div class="photogray"></div>
+				 {/ElseIf}
+			    </div>
+			{/IF}
+			
+			<dl>
+			<dt><a href="{$BoardUrl}">『 {$BoardName} 』</a> ( {ElseIF:{$TodayNum}>0}
+				  <span style="color:red">{$TodayNum}</span>
+				 {Else}
+				  {$TodayNum}
+				 {/ElseIf})</dt>
+			<dd><em>主题: {$TotalSubject}</em>, <em>帖数: {$TotalReply}</em></dd><dd>
+			<span class="lastpost"><a href="{$LastPostUrl}">最后发表: {$LastPostTime}</a></span>
+			</dd>
+			</dl>
+   ]]>
+	</template>
+	<template name="board3g">
+		<![CDATA[
+		   <table width="99%" style="border-bottom:#efefef 1px dashed;margin-top:10px;margin-bottom:10px" align="center" cellpadding="0" cellspacing="0">
+			<tr>
+				{IF:"{$PhotoUrl}"<>""}
+				<td width="80" style="text-align:center"/>
+				  <div class="board_img"><a href="{$BoardUrl}"><img src="{$PhotoUrl}" border="0"/></a></div>
+				</td>
+				{/IF}
+				{IF:"{$PhotoUrl}"=""}
+				  <td width="40" style="text-align:center"/>
+				  {ElseIF:{$TodayNum}>0}
+				  <div class="photored"></div>
+				 {Else}
+				  <div class="photogray"></div>
+				 {/ElseIf}
+				  </td>
+				{/IF}
+				
+				<td class="newlink">
+				<a href="{$BoardUrl}">『{$BoardName}』</a> (今日: {ElseIF:{$TodayNum}>0}
+				  <span style="color:red">{$TodayNum}</span>
+				 {Else}
+				  {$TodayNum}
+				 {/ElseIf})
+				 <br/>
+				<span>版主：{$Master}  | 主题：{$TotalSubject}   |  帖数：{$TotalReply} </span></td>
+				
+			</tr>		
+			</table>
+   ]]>
+	</template>
+	<template name="indexlist">
+		<![CDATA[
+<table border="0" style="margin:0px auto;width:98%" align="center" class="glist" cellpadding="0" cellspacing="0">
+		    <thead class="category">
+				<tr>
+					<td style="width:30px;text-align:center"></td>
+					<td class="banmian">{$ListType}</td>
+					<td style="width:80px;text-align:center">作者</td>
+					<td style="width:60px;text-align:center">回复</td>
+					<td style="width:150px;text-align:center">最后发表↓</td>
+				</tr>
+			 </thead>
+			 </table>
+				{@toploop.begin}<table border="0" style="margin:0px auto;width:98%" align="center" class="topiclist" cellpadding="0" cellspacing="0">
+				<tr>
+				    <td style="width:30px;text-align:center">{@item.Ico}</td>
+					<td class="topictitle">
+					{@item.subjectlist}
+					</td>
+					<td style="width:80px;text-align:center">{@item.Author}</a><div class="time">{@item.PubTime}</div></td>
+					<td style="width:60px;text-align:center">{@item.ReplayTimes}<div class="time">{@item.Hits}</div></td>
+					<td style="width:150px;text-align:center">
+						{@item.LastReplayUser}
+						<div class="time">{@item.LastReplayTime}</div>
+					</td>
+				</tr>
+				</table>
+				{@toploop.end}
+				{@loop.begin}<table border="0" style="margin:0px auto;width:98%" align="center" class="topiclist" cellpadding="0" cellspacing="0">
+				<tr>
+				    <td style="width:30px;text-align:center">{@item.Ico}</td>
+					<td class="topictitle">
+					{@item.subjectlist}
+					</td>
+					<td style="width:80px;text-align:center">{@item.Author}</a><div class="time">{@item.PubTime}</div></td>
+					<td style="width:60px;text-align:center">{@item.ReplayTimes}<div class="time">{@item.Hits}</div></td>
+					<td style="width:150px;text-align:center">
+						{@item.LastReplayUser}
+						<div class="time">{@item.LastReplayTime}</div>
+					</td>
+				</tr>
+				</table>
+				{@loop.end}
+				<table border="0" width="95%" style="padding-left:16px">
+				 <tr>
+				   <td>&nbsp;<a href="javascript:Posted()"><img src="{$GetInstallDir}{$GetClubInstallDir}/images/button_post.png"></a></td>
+				   <td>{@board.showPage}</td>
+				 </tr>
+		     </table>
+		   ]]>
+	</template>
+</guestbook>

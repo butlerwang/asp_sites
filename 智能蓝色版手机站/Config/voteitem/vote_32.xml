@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="gb2312"?>
+<vote>
+	<voteitem id="1">
+		<name><![CDATA[商城系统]]></name>
+		<num>9</num>
+	</voteitem>
+	<voteitem id="2">
+		<name><![CDATA[ 考试系统]]></name>
+		<num>4</num>
+	</voteitem>
+	<voteitem id="3">
+		<name><![CDATA[ 供求系统]]></name>
+		<num>0</num>
+	</voteitem>
+	<voteitem id="4">
+		<name><![CDATA[ 影视系统]]></name>
+		<num>0</num>
+	</voteitem>
+</vote>

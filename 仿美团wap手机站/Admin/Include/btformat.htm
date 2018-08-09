@@ -1,0 +1,311 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>TD {FONT-SIZE: 12px}</style>
+<title>设置标题格式</title>
+<script language="javascript">
+function setcolor()
+{
+myfont.style.color=co.value;
+T1.value=sylr();
+
+}   
+function setsize()
+{
+myfont.style.fontsize=fs.value;
+T1.value=sylr();
+
+}    
+function setfon()
+{
+//abc="font-family";
+myfont.style.fontFamily=font1.value;
+  T1.value=sylr();
+
+}   
+
+function  seok(){
+  window.returnValue=T1.value;
+  window.close();
+}
+</SCRIPT>
+<script language="vbscript">
+function setsy()
+   syname=SY.value
+   select case syname
+      case  "W"
+          myfont.style.fontWeight="" '加粗
+          myfont.style.textDecoration="" '下线
+          myfont.style.fontStyle=""    '斜体
+      
+      case "B"
+          myfont.style.fontWeight="bold" '加粗
+          myfont.style.textDecoration="" '下线
+          myfont.style.fontStyle=""    '斜体
+
+      case "U"
+          myfont.style.fontWeight="" '加粗
+          myfont.style.textDecoration=" underline" '下线
+          myfont.style.fontStyle=""    '斜体
+
+      case "I"
+          myfont.style.fontWeight="" '加粗
+          myfont.style.textDecoration="" '下线
+          myfont.style.fontStyle="italic"    '斜体
+
+      case "BU"
+          myfont.style.fontWeight="bold" '加粗
+          myfont.style.textDecoration=" underline" '下线
+          myfont.style.fontStyle=""    '斜体
+
+      case "BI"
+          myfont.style.fontWeight="bold" '加粗
+          myfont.style.textDecoration="" '下线
+          myfont.style.fontStyle="italic"    '斜体
+
+      case "UI"
+          myfont.style.fontWeight="" '加粗
+          myfont.style.textDecoration=" underline" '下线
+          myfont.style.fontStyle="italic"    '斜体
+
+      case "BUI"
+          myfont.style.fontWeight="bold" '加粗
+          myfont.style.textDecoration=" underline" '下线
+          myfont.style.fontStyle="italic"    '斜体
+
+   end select
+  T1.value=sylr()
+end function 
+
+function sylr()
+   SYB="font-Weight:"& myfont.style.fontWeight &";"
+   SYI="font-Style:"&myfont.style.fontStyle&";"
+   SYU="text-Decoration:"&myfont.style.textDecoration&";"
+   SYFONT="font-Family:"&myfont.style.fontFamily&";"
+   SYCOLO="color:"&myfont.style.color&";"
+   SYSIZE="font-size:"&myfont.style.fontsize&";"
+   
+   sylr="style="&chr(34) & syb & syi & syu & syfont & sycolo & sysize & chr(34)
+   
+end function 
+</SCRIPT>
+</head>
+
+<body bgcolor="ECE9D8" topmargin="2" leftmargin="0">
+<table border="0" cellspacing="0" width="100%" id="AutoNumber2" cellpadding="0" height="100%">
+  <tr>
+    <td width="10"></td>
+    <td>
+<table border="1" cellspacing="0" width="100%" id="AutoNumber1" bordercolorlight="#000000" bordercolordark="#FFFFFF" cellpadding="0" height="100%">
+  <tr>
+    <td width="100%" valign="top">
+    <table border="0" cellspacing="1" width="100%" id="AutoNumber3">
+      <tr>
+        <td width="79%" align="center">
+        <table border="0" cellspacing="1" id="AutoNumber5">
+          <tr>
+            <td width="66%" colspan="2"><input  type="hidden"  name="T1" ></td>
+          </tr>
+          <tr>
+            <td width="33%"><select  onchange="vbscript:setsy()" size="4" name="SY" multiple>
+            <option value="W">无</option>
+            <option value="B">加粗</option>
+            <option value="U">下线</option>
+            <option value="I">倾斜</option>
+            <option value="BU">加粗 下线</option>
+            <option value="BI">倾斜 加粗</option>
+            <option value="UI">倾斜 下线</option>
+            <option value="BUI">加粗 倾斜 下线</option>
+            </select></td>
+            <td width="33%">
+        <select  onchange="javascript:setfon()" id="font1" name="font1" multiple >                
+  <option value="宋体">宋体<option value="黑体">黑体<option value="楷体">楷体<option value="仿宋">仿宋<option value="隶书">隶书<option value="幼圆">幼圆<option value="新宋体">新宋体<option value="细明体">细明体<option value="Arial">Arial<option value="Arial Black">Arial 
+  Black<option value="Arial Narrow">Arial Narrow<option value="Bradley Hand	ITC">Bradley 
+  Hand ITC<option value="Brush Script	MT">Brush Script MT<option value="Century Gothic">Century 
+  Gothic<option value="Comic Sans MS">Comic Sans MS<option value="Courier">Courier<option value="Courier New">Courier 
+  New<option value="MS Sans Serif">MS Sans Serif<option value="Script">Script<option value="System">System<option value="Times New Roman">Times 
+  New Roman<option value="Viner Hand ITC">Viner Hand ITC<option value="Verdana">Verdana<option value="Wide	Latin">Wide 
+  Latin<option value="Wingdings">Wingdings</option></select></td>
+          </tr>
+          <tr>
+            <td width="33%">文字颜色&nbsp;&nbsp;&nbsp;&nbsp; </td>
+            <td width="33%"> <select name="co" id="co" size="1" onChange="javascript:setcolor()">   
+ <option style="BACKGROUND-COLOR: #f0f8ff; COLOR: #f0f8ff" value="F0F8FF">#F0F8FF</option>   
+ <option style="BACKGROUND-COLOR: #faebd7; COLOR: #faebd7" value="FAEBD7">#FAEBD7</option>   
+ <option style="BACKGROUND-COLOR: #00ffff; COLOR: #00ffff" value="00FFFF">#00FFFF</option>   
+ <option style="BACKGROUND-COLOR: #7fffd4; COLOR: #7fffd4" value="7FFFD4">#7FFFD4</option>   
+ <option style="BACKGROUND-COLOR: #f0ffff; COLOR: #f0ffff" value="F0FFFF">#F0FFFF</option>   
+ <option style="BACKGROUND-COLOR: #f5f5dc; COLOR: #f5f5dc" value="F5F5DC">#F5F5DC</option>   
+ <option style="BACKGROUND-COLOR: #ffe4c4; COLOR: #ffe4c4" value="FFE4C4">#FFE4C4</option>   
+ <option style="BACKGROUND-COLOR: #000000; COLOR: #000000" value="000000">#000000</option>   
+ <option style="BACKGROUND-COLOR: #ffebcd; COLOR: #ffebcd" value="FFEBCD">#FFEBCD</option>   
+ <option style="BACKGROUND-COLOR: #0000ff; COLOR: #0000ff" value="0000FF">#0000FF</option>   
+ <option style="BACKGROUND-COLOR: #8a2be2; COLOR: #8a2be2" value="8A2BE2">#8A2BE2</option>   
+ <option style="BACKGROUND-COLOR: #a52a2a; COLOR: #a52a2a" value="A52A2A">#A52A2A</option>   
+ <option style="BACKGROUND-COLOR: #deb887; COLOR: #deb887" value="DEB887">#DEB887</option>   
+ <option style="BACKGROUND-COLOR: #5f9ea0; COLOR: #5f9ea0" value="5F9EA0">#5F9EA0</option>   
+ <option style="BACKGROUND-COLOR: #7fff00; COLOR: #7fff00" value="7FFF00">#7FFF00</option>   
+ <option style="BACKGROUND-COLOR: #d2691e; COLOR: #d2691e" value="D2691E">#D2691E</option>   
+ <option style="BACKGROUND-COLOR: #ff7f50; COLOR: #ff7f50" value="FF7F50">#FF7F50</option>   
+ <option style="BACKGROUND-COLOR: #6495ed; COLOR: #6495ed" value="6495ED">#6495ED</option>   
+ <option style="BACKGROUND-COLOR: #fff8dc; COLOR: #fff8dc" value="FFF8DC">#FFF8DC</option>   
+ <option style="BACKGROUND-COLOR: #dc143c; COLOR: #dc143c" value="DC143C">#DC143C</option>   
+ <option style="BACKGROUND-COLOR: #00ffff; COLOR: #00ffff" value="00FFFF">#00FFFF</option>   
+ <option style="BACKGROUND-COLOR: #00008b; COLOR: #00008b" value="00008B">#00008B</option>   
+ <option style="BACKGROUND-COLOR: #008b8b; COLOR: #008b8b" value="008B8B">#008B8B</option>   
+ <option style="BACKGROUND-COLOR: #b8860b; COLOR: #b8860b" value="B8860B">#B8860B</option>   
+ <option style="BACKGROUND-COLOR: #a9a9a9; COLOR: #a9a9a9" value="A9A9A9">#A9A9A9</option>   
+ <option style="BACKGROUND-COLOR: #006400; COLOR: #006400" value="006400">#006400</option>   
+ <option style="BACKGROUND-COLOR: #bdb76b; COLOR: #bdb76b" value="BDB76B">#BDB76B</option>   
+ <option style="BACKGROUND-COLOR: #8b008b; COLOR: #8b008b" value="8B008B">#8B008B</option>   
+ <option style="BACKGROUND-COLOR: #556b2f; COLOR: #556b2f" value="556B2F">#556B2F</option>   
+ <option style="BACKGROUND-COLOR: #ff8c00; COLOR: #ff8c00" value="FF8C00">#FF8C00</option>   
+ <option style="BACKGROUND-COLOR: #9932cc; COLOR: #9932cc" value="9932CC">#9932CC</option>   
+ <option style="BACKGROUND-COLOR: #8b0000; COLOR: #8b0000" value="8B0000">#8B0000</option>   
+ <option style="BACKGROUND-COLOR: #e9967a; COLOR: #e9967a" value="E9967A">#E9967A</option>   
+ <option style="BACKGROUND-COLOR: #8fbc8f; COLOR: #8fbc8f" value="8FBC8F">#8FBC8F</option>   
+ <option style="BACKGROUND-COLOR: #483d8b; COLOR: #483d8b" value="483D8B">#483D8B</option>   
+ <option style="BACKGROUND-COLOR: #2f4f4f; COLOR: #2f4f4f" value="2F4F4F">#2F4F4F</option>   
+ <option style="BACKGROUND-COLOR: #00ced1; COLOR: #00ced1" value="00CED1">#00CED1</option>   
+ <option style="BACKGROUND-COLOR: #9400d3; COLOR: #9400d3" value="9400D3">#9400D3</option>   
+ <option style="BACKGROUND-COLOR: #ff1493; COLOR: #ff1493" value="FF1493">#FF1493</option>   
+ <option style="BACKGROUND-COLOR: #00bfff; COLOR: #00bfff" value="00BFFF">#00BFFF</option>   
+ <option style="BACKGROUND-COLOR: #696969; COLOR: #696969" value="696969">#696969</option>   
+ <option style="BACKGROUND-COLOR: #1e90ff; COLOR: #1e90ff" value="1E90FF">#1E90FF</option>   
+ <option style="BACKGROUND-COLOR: #b22222; COLOR: #b22222" value="B22222">#B22222</option>   
+ <option style="BACKGROUND-COLOR: #fffaf0; COLOR: #fffaf0" value="FFFAF0">#FFFAF0</option>   
+ <option style="BACKGROUND-COLOR: #228b22; COLOR: #228b22" value="228B22">#228B22</option>   
+ <option style="BACKGROUND-COLOR: #ff00ff; COLOR: #ff00ff" value="FF00FF">#FF00FF</option>   
+ <option style="BACKGROUND-COLOR: #dcdcdc; COLOR: #dcdcdc" value="DCDCDC">#DCDCDC</option>   
+ <option style="BACKGROUND-COLOR: #f8f8ff; COLOR: #f8f8ff" value="F8F8FF">#F8F8FF</option>   
+ <option style="BACKGROUND-COLOR: #ffd700; COLOR: #ffd700" value="FFD700">#FFD700</option>   
+ <option style="BACKGROUND-COLOR: #daa520; COLOR: #daa520" value="DAA520">#DAA520</option>   
+ <option style="BACKGROUND-COLOR: #808080; COLOR: #808080" value="808080">#808080</option>   
+ <option style="BACKGROUND-COLOR: #008000; COLOR: #008000" value="008000">#008000</option>   
+ <option style="BACKGROUND-COLOR: #adff2f; COLOR: #adff2f" value="ADFF2F">#ADFF2F</option>   
+ <option style="BACKGROUND-COLOR: #f0fff0; COLOR: #f0fff0" value="F0FFF0">#F0FFF0</option>   
+ <option style="BACKGROUND-COLOR: #ff69b4; COLOR: #ff69b4" value="FF69B4">#FF69B4</option>   
+ <option style="BACKGROUND-COLOR: #cd5c5c; COLOR: #cd5c5c" value="CD5C5C">#CD5C5C</option>   
+ <option style="BACKGROUND-COLOR: #4b0082; COLOR: #4b0082" value="4B0082">#4B0082</option>   
+ <option style="BACKGROUND-COLOR: #fffff0; COLOR: #fffff0" value="FFFFF0">#FFFFF0</option>   
+ <option style="BACKGROUND-COLOR: #f0e68c; COLOR: #f0e68c" value="F0E68C">#F0E68C</option>   
+ <option style="BACKGROUND-COLOR: #e6e6fa; COLOR: #e6e6fa" value="E6E6FA">#E6E6FA</option>   
+ <option style="BACKGROUND-COLOR: #fff0f5; COLOR: #fff0f5" value="FFF0F5">#FFF0F5</option>   
+ <option style="BACKGROUND-COLOR: #7cfc00; COLOR: #7cfc00" value="7CFC00">#7CFC00</option>   
+ <option style="BACKGROUND-COLOR: #fffacd; COLOR: #fffacd" value="FFFACD">#FFFACD</option>   
+ <option style="BACKGROUND-COLOR: #add8e6; COLOR: #add8e6" value="ADD8E6">#ADD8E6</option>   
+ <option style="BACKGROUND-COLOR: #f08080; COLOR: #f08080" value="F08080">#F08080</option>   
+ <option style="BACKGROUND-COLOR: #e0ffff; COLOR: #e0ffff" value="E0FFFF">#E0FFFF</option>   
+ <option style="BACKGROUND-COLOR: #fafad2; COLOR: #fafad2" value="FAFAD2">#FAFAD2</option>   
+ <option style="BACKGROUND-COLOR: #90ee90; COLOR: #90ee90" value="90EE90">#90EE90</option>   
+ <option style="BACKGROUND-COLOR: #d3d3d3; COLOR: #d3d3d3" value="D3D3D3">#D3D3D3</option>   
+ <option style="BACKGROUND-COLOR: #ffb6c1; COLOR: #ffb6c1" value="FFB6C1">#FFB6C1</option>   
+ <option style="BACKGROUND-COLOR: #ffa07a; COLOR: #ffa07a" value="FFA07A">#FFA07A</option>   
+ <option style="BACKGROUND-COLOR: #20b2aa; COLOR: #20b2aa" value="20B2AA">#20B2AA</option>   
+ <option style="BACKGROUND-COLOR: #87cefa; COLOR: #87cefa" value="87CEFA">#87CEFA</option>   
+ <option style="BACKGROUND-COLOR: #778899; COLOR: #778899" value="778899">#778899</option>   
+ <option style="BACKGROUND-COLOR: #b0c4de; COLOR: #b0c4de" value="B0C4DE">#B0C4DE</option>   
+ <option style="BACKGROUND-COLOR: #ffffe0; COLOR: #ffffe0" value="FFFFE0">#FFFFE0</option>   
+ <option style="BACKGROUND-COLOR: #00ff00; COLOR: #00ff00" value="00FF00">#00FF00</option>   
+ <option style="BACKGROUND-COLOR: #32cd32; COLOR: #32cd32" value="32CD32">#32CD32</option>   
+ <option style="BACKGROUND-COLOR: #faf0e6; COLOR: #faf0e6" value="FAF0E6">#FAF0E6</option>   
+ <option style="BACKGROUND-COLOR: #ff00ff; COLOR: #ff00ff" value="FF00FF">#FF00FF</option>   
+ <option style="BACKGROUND-COLOR: #800000; COLOR: #800000" value="800000">#800000</option>   
+ <option style="BACKGROUND-COLOR: #66cdaa; COLOR: #66cdaa" value="66CDAA">#66CDAA</option>   
+ <option style="BACKGROUND-COLOR: #0000cd; COLOR: #0000cd" value="0000CD">#0000CD</option>   
+ <option style="BACKGROUND-COLOR: #ba55d3; COLOR: #ba55d3" value="BA55D3">#BA55D3</option>   
+ <option style="BACKGROUND-COLOR: #9370db; COLOR: #9370db" value="9370DB">#9370DB</option>   
+ <option style="BACKGROUND-COLOR: #3cb371; COLOR: #3cb371" value="3CB371">#3CB371</option>   
+ <option style="BACKGROUND-COLOR: #7b68ee; COLOR: #7b68ee" value="7B68EE">#7B68EE</option>   
+ <option style="BACKGROUND-COLOR: #00fa9a; COLOR: #00fa9a" value="00FA9A">#00FA9A</option>   
+ <option style="BACKGROUND-COLOR: #48d1cc; COLOR: #48d1cc" value="48D1CC">#48D1CC</option>   
+ <option style="BACKGROUND-COLOR: #c71585; COLOR: #c71585" value="C71585">#C71585</option>   
+ <option style="BACKGROUND-COLOR: #191970; COLOR: #191970" value="191970">#191970</option>   
+ <option style="BACKGROUND-COLOR: #f5fffa; COLOR: #f5fffa" value="F5FFFA">#F5FFFA</option>   
+ <option style="BACKGROUND-COLOR: #ffe4e1; COLOR: #ffe4e1" value="FFE4E1">#FFE4E1</option>   
+ <option style="BACKGROUND-COLOR: #ffe4b5; COLOR: #ffe4b5" value="FFE4B5">#FFE4B5</option>   
+ <option style="BACKGROUND-COLOR: #ffdead; COLOR: #ffdead" value="FFDEAD">#FFDEAD</option>   
+ <option style="BACKGROUND-COLOR: #000080; COLOR: #000080" value="000080">#000080</option>   
+ <option style="BACKGROUND-COLOR: #fdf5e6; COLOR: #fdf5e6" value="FDF5E6">#FDF5E6</option>   
+ <option style="BACKGROUND-COLOR: #808000; COLOR: #808000" value="808000">#808000</option>   
+ <option style="BACKGROUND-COLOR: #6b8e23; COLOR: #6b8e23" value="6B8E23">#6B8E23</option>   
+ <option style="BACKGROUND-COLOR: #ffa500; COLOR: #ffa500" value="FFA500">#FFA500</option>   
+ <option style="BACKGROUND-COLOR: #ff4500; COLOR: #ff4500" value="FF4500">#FF4500</option>   
+ <option style="BACKGROUND-COLOR: #da70d6; COLOR: #da70d6" value="DA70D6">#DA70D6</option>   
+ <option style="BACKGROUND-COLOR: #eee8aa; COLOR: #eee8aa" value="EEE8AA">#EEE8AA</option>   
+ <option style="BACKGROUND-COLOR: #98fb98; COLOR: #98fb98" value="98FB98">#98FB98</option>   
+ <option style="BACKGROUND-COLOR: #afeeee; COLOR: #afeeee" value="AFEEEE">#AFEEEE</option>   
+ <option style="BACKGROUND-COLOR: #db7093; COLOR: #db7093" value="DB7093">#DB7093</option>   
+ <option style="BACKGROUND-COLOR: #ffefd5; COLOR: #ffefd5" value="FFEFD5">#FFEFD5</option>   
+ <option style="BACKGROUND-COLOR: #ffdab9; COLOR: #ffdab9" value="FFDAB9">#FFDAB9</option>   
+ <option style="BACKGROUND-COLOR: #cd853f; COLOR: #cd853f" value="CD853F">#CD853F</option>   
+ <option style="BACKGROUND-COLOR: #ffc0cb; COLOR: #ffc0cb" value="FFC0CB">#FFC0CB</option>   
+ <option style="BACKGROUND-COLOR: #dda0dd; COLOR: #dda0dd" value="DDA0DD">#DDA0DD</option>   
+ <option style="BACKGROUND-COLOR: #b0e0e6; COLOR: #b0e0e6" value="B0E0E6">#B0E0E6</option>   
+ <option style="BACKGROUND-COLOR: #800080; COLOR: #800080" value="800080">#800080</option>   
+ <option style="BACKGROUND-COLOR: #ff0000; COLOR: #ff0000" value="FF0000">#FF0000</option>   
+ <option style="BACKGROUND-COLOR: #bc8f8f; COLOR: #bc8f8f" value="BC8F8F">#BC8F8F</option>   
+ <option style="BACKGROUND-COLOR: #4169e1; COLOR: #4169e1" value="4169E1">#4169E1</option>   
+ <option style="BACKGROUND-COLOR: #8b4513; COLOR: #8b4513" value="8B4513">#8B4513</option>   
+ <option style="BACKGROUND-COLOR: #fa8072; COLOR: #fa8072" value="FA8072">#FA8072</option>   
+ <option style="BACKGROUND-COLOR: #f4a460; COLOR: #f4a460" value="F4A460">#F4A460</option>   
+ <option style="BACKGROUND-COLOR: #2e8b57; COLOR: #2e8b57" value="2E8B57">#2E8B57</option>   
+ <option style="BACKGROUND-COLOR: #fff5ee; COLOR: #fff5ee" value="FFF5EE">#FFF5EE</option>   
+ <option style="BACKGROUND-COLOR: #a0522d; COLOR: #a0522d" value="A0522D">#A0522D</option>   
+ <option style="BACKGROUND-COLOR: #c0c0c0; COLOR: #c0c0c0" value="C0C0C0">#C0C0C0</option>   
+ <option style="BACKGROUND-COLOR: #87ceeb; COLOR: #87ceeb" value="87CEEB">#87CEEB</option>   
+ <option style="BACKGROUND-COLOR: #6a5acd; COLOR: #6a5acd" value="6A5ACD">#6A5ACD</option>   
+ <option style="BACKGROUND-COLOR: #708090; COLOR: #708090" value="708090">#708090</option>   
+ <option style="BACKGROUND-COLOR: #fffafa; COLOR: #fffafa" value="FFFAFA">#FFFAFA</option>   
+ <option style="BACKGROUND-COLOR: #00ff7f; COLOR: #00ff7f" value="00FF7F">#00FF7F</option>   
+ <option style="BACKGROUND-COLOR: #4682b4; COLOR: #4682b4" value="4682B4">#4682B4</option>   
+ <option style="BACKGROUND-COLOR: #d2b48c; COLOR: #d2b48c" value="D2B48C">#D2B48C</option>   
+ <option style="BACKGROUND-COLOR: #008080; COLOR: #008080" value="008080">#008080</option>   
+ <option style="BACKGROUND-COLOR: #d8bfd8; COLOR: #d8bfd8" value="D8BFD8">#D8BFD8</option>   
+ <option style="BACKGROUND-COLOR: #ff6347; COLOR: #ff6347" value="FF6347">#FF6347</option>   
+ <option style="BACKGROUND-COLOR: #40e0d0; COLOR: #40e0d0" value="40E0D0">#40E0D0</option>   
+ <option style="BACKGROUND-COLOR: #ee82ee; COLOR: #ee82ee" value="EE82EE">#EE82EE</option>   
+ <option style="BACKGROUND-COLOR: #f5deb3; COLOR: #f5deb3" value="F5DEB3">#F5DEB3</option>   
+ <option style="BACKGROUND-COLOR: #ffffff; COLOR: #ffffff" value="FFFFFF">#FFFFFF</option>   
+ <option style="BACKGROUND-COLOR: #f5f5f5; COLOR: #f5f5f5" value="F5F5F5">#F5F5F5</option>   
+ <option style="BACKGROUND-COLOR: #ffff00; COLOR: #ffff00" value="FFFF00">#FFFF00</option>   
+ <option style="BACKGROUND-COLOR: #9acd32; COLOR: #9acd32" value="9ACD32">#9ACD32</option>   
+ <option style="BACKGROUND-COLOR: #70a4c8; COLOR: #70a4c8" value="70A4C8">#70A4C8</option>   
+ <option style="BACKGROUND-COLOR: #84b5d5; COLOR: #84b5d5" value="84b5d5">#84b5d5</option>   
+ </select></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td width="79%" align="center">
+        <table border="0" cellspacing="1" width="80%" id="AutoNumber4" bgcolor="#FFFFFF">
+          <tr>
+            <td width="100%" align="center" style="font-size: 18pt">
+            <div style="color: #000000; text-decoration:; font-family:;  font-weight:; font-style: " id=myfont>
+            标题样式 ABcd
+            </div>
+            </td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+      <tr>
+        <td width="79%" align="center">
+        <input onClick="javascript:seok();" type="button" value="确定" name="B1" >&nbsp;
+        <input onClick="javascript:window.close();" type="button" value="关闭" name="B2" ></td>
+      </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</td>
+  </tr>
+</table>
+</body>
+
+</html>

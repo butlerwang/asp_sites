@@ -1,0 +1,28 @@
+﻿/*<body>*/
+body {
+	background-color:#ffffff; 
+	color:#000000;
+	margin:0px auto; padding:0;
+	font-size:16px;
+}
+a,a:link,a:visited,a:hover,a:active {
+	font-size: 16px;
+	color:#2CA8AA;
+	text-decoration: none;
+}
+.nav { background:#2CA8AA; height:90px;}
+.nav li{ float:left; width:33.33%; height:45px; padding:0; overflow:hidden;}
+.nav a{display:block; height:44px; padding:0; text-align:center; line-height:45px; color:没有记录!; border-bottom:1px solid #E2F1F3; border-right:1px solid #E2F1F3;}
+.nav a:link,.nav a:visited,.nav a:hover,.nav a:active {color:#ffffff;}
+.nav_a { background:#FFFFFF;}
+.nav_a li{ float:left; width:33.33%; height:40px; padding:0; overflow:hidden;}
+.nav_a a{display:block; height:39px; padding:0; text-align:center; line-height:40px; color:#45ABAB; border-bottom:1px solid #CBE0E3; border-right:1px solid #CBE0E3;}
+.title{ height:35px; background:#F1F9FA; line-height:35px; clear:both; border-bottom: 1px solid #D4D4D4; }
+.title a{ color:;}
+.title .y{ display:block; float:left; padding:0 10px; background:#F1F9FA; color:#000000;}
+.title .zixun{ float:right; padding:8px 10px 0 0;}
+.foot_nav{ height:30px; line-height:30px; text-align:center;}
+.foot_nav ,.foot_nav a,.g_zixun a{  padding:0 3px; color:#ffffff; }
+.g_zixun{position: fixed; bottom:0; width:100%; }
+.foot_nav,.g_zixun{background:#2CA8AA;}
+/*</body>*/

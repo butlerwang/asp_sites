@@ -1,0 +1,41 @@
+﻿BODY {
+ margin:0px;
+ border:0px
+}
+HR.Seperator { 
+BORDER-BOTTOM: #ffffff 1px inset; 
+BORDER-LEFT: #ffffff 1px inset; 
+BORDER-RIGHT: #ffffff 1px inset; 
+BORDER-TOP: #ffffff 1px inset; 
+WIDTH: 95% 
+} 
+TD {   
+FONT-SIZE: 12px;
+font-family:@Tahoma,@宋体;}
+TABLE.Menu {
+  border-top:#CCCCCC 2px solid;
+  border-left:#CCCCCC 2px solid;
+  border-bottom:buttonshadow 2px solid;
+  border-right:buttonshadow 2px solid;
+  background-color:#efefef
+}
+TD.RightBg {
+background-color:#efefef
+}
+TD.MouseOver {
+background-color:highlight;
+color:highlighttext;
+cursor:default;
+}
+TD.MouseOut {
+ background-color:#efefef;
+ color:buttontext;
+ cursor:default;
+}
+TD.HrShadow {
+  background-color:buttonshadow;
+}
+TD.HrHighLight {
+background-color:buttonhighlight;
+}
+

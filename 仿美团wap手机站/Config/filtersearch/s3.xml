@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<field>
+ <template><![CDATA[{@TemplateDir}/下载系统/筛选页.html]]></template>
+ <isrewrite>0</isrewrite>
+ <maxperpage>10</maxperpage>
+ <item name="tid" enabled="true">
+  <title>分类</title>
+  <fieldname>tid</fieldname>
+  <fieldtype>-1</fieldtype>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item  name="title" enabled="false">
+  <title>软件名称</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>title</fieldname>
+  <condition>dy</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item name="keywords" enabled="true">
+  <title>关 键 字</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>keywords</fieldname>
+  <condition>dy</condition>
+  <showvalue>CMS源码,影音软件,PHP程序,其它软件</showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item name="author" enabled="true">
+  <title>开发商</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>author</fieldname>
+  <condition>dy</condition>
+  <showvalue>KesionCMS,科兴公司,科汛网络开发</showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item name="origin" enabled="true">
+  <title>软件来源</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>origin</fieldname>
+  <condition>dy</condition>
+  <showvalue>kesioncms,互联网</showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <orderitem name="id" enabled="true">
+  <uptitle>按软件ID升序</uptitle>
+  <downtitle>按软件ID降序</downtitle>
+ </orderitem>
+ <orderitem  name="adddate" enabled="false">
+  <uptitle>按添加时间升序</uptitle>
+  <downtitle>按添加时间降序</downtitle>
+ </orderitem>
+ <optionitem  name="1">
+  <title>所有软件</title>
+  <sqlparam><![CDATA[1=1]]></sqlparam>
+ </optionitem>
+ <optionitem  name="2">
+  <title>推荐软件</title>
+  <sqlparam><![CDATA[recommend=1]]></sqlparam>
+ </optionitem>
+ </field>

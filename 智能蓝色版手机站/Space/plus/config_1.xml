@@ -1,0 +1,26 @@
+<mp3config>
+
+    <!-- choose here if you want the mp3player to automatically start and shuffle songs (true or false) -->    
+    <autostart>true</autostart>
+    <shuffle>false</shuffle>
+
+    <!-- choose the mp3player repeat mode (none, one or all) -->   
+    <repeat>all</repeat>
+    
+    <!-- choose the mp3player volume (0 to 100) -->  
+    <volume>80</volume>
+    
+    <!-- choose here if you want to show the display, playlist or link buttons (true' or false) -->   
+    <showdisplay>true</showdisplay>
+    <showplaylist>true</showplaylist>
+    <linktarget>_blank</linktarget>
+        
+    <!-- choose the mp3player colors (hexadecimal, from 0x000000 to 0xffffff) -->  
+    <backcolor>0x000000</backcolor>
+    <frontcolor>0xffffff</frontcolor>
+    <lightcolor>0x00cc00</lightcolor>
+
+    <!-- you can set a JPG as the background here to skin the mp3player --> 
+    <jpgfile></jpgfile>	
+    
+</mp3config>

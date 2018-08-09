@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="gb2312"?>
+<modelfield>
+	<model name="111">区域|KS_qy,房屋类型|KS_fx,户型|KS_hx,建筑面积|KS_jzmj,装修状况|KS_zxzk,房屋售价|KS_jiage,信息来源|KS_fbz,房源状态|KS_fyzt</model><model name="112">更新时间|AddDate,房屋类型|KS_fx,户型|KS_hx,总楼层|KS_lg,租金|KS_zuijin,是否委托|KS_weituo,房源状态|KS_fyzt</model><model name="7">生成标志|refreshtf,更新时间|AddDate,类型|ModelType</model><model name="8">录入员|Inputer,生成标志|refreshtf,更新时间|AddDate</model><model name="2"></model><model name="3"></model><model name="4">录入员|Inputer,生成标志|refreshtf,更新时间|AddDate</model><model name="1"></model></modelfield>

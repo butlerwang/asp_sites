@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="gb2312"?>
+<posttemplate>
+ <label name="post">
+		<![CDATA[
+		<script src="../ks_inc/common.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		  function InsertFileFromUp(FileList,fileSize,maxId,title)
+		  { 
+		    var files=FileList.split('/');
+			var file=files[files.length-1];
+			var fileext = FileList.substring(FileList.lastIndexOf(".") + 1, FileList.length).toLowerCase();
+			if (fileext=="gif" || fileext=="jpg" || fileext=="jpeg" || fileext=="bmp" || fileext=="png")
+			  {
+		         {IF:KS.Setting(59)="0"}
+				    if (jQuery('#pic').val()==''){
+					 jQuery('#pic').val(FileList);
+					}
+			     {/IF}
+				 insertHTMLToEditor('[img]'+FileList+'[/img]');	
+			  }else if(fileext=='wmv'||fileext=='flv'||fileext=='mp3'||fileext=='swf'||fileext=='rm'||fileext=='rmvb'){
+		      insertHTMLToEditor('[media='+fileext+',400,300,1]'+FileList+'[/media]');
+              }else{
+			  {IF:KS.Setting(59)="0"}	
+			  if (jQuery('#AnnexExt').val()=='')jQuery('#AnnexExt').val(fileext);
+		      {/IF}
+			  var str="[UploadFiles]"+maxId+","+fileSize+","+fileext+","+title+"[/UploadFiles]";
+				 insertHTMLToEditor(str);	
+			 }
+		}
+		function insertHTMLToEditor(codeStr) { 
+		  Editor.insertText(Editor.bbcode2html(codeStr));
+		} 
+		</script>
+		<iframe src="about:blank" name="hidIframe" id="hidIframe" width="0" height="0" style="display:none"></iframe>		
+			 
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+					<form action="Save_Post.asp" method="post" name="myform" id="myform" target="hidIframe" onKeyDown="if(event.ctrlKey&&event.keyCode==13)this.submit()">
+					   <input type="hidden" name="posttype" value="{$PostType}"/>
+                          <tr> 
+						    <td height="30" >
+							{$PostSubject}
+							</td>
+                            <td rowspan="3" width="220" valign="top" style="padding:6px;background:#f1f1f1;line-height:25px;text-align:left;font-size:12px;font-weight:normal;color:#999999"> <strong>附加选项</strong><br/>
+							 <label><input type="checkbox" name="HtmlTf" id="HtmlTf" disabled {$HtmlTagSupport} value="1">Html 代码</label><br/>
+							 <label><input type="checkbox" checked="checked" disabled="disabled">UBB 代码</label><br/>
+							 <label><input type="checkbox" name="showip" value="1"{$ShowIPChecked}>隐藏IP</label><br/>
+							 <label><input type="checkbox" name="showsign" value="1"{$ShowSignChecked}>使用个人签名</label><br/><br/>
+							 {$ShowSaleField}
+							 <strong>Tips:</strong><br/>1、可以在内容里放<span style="color:green">[free]免费内容[/free]</span>对出售的帖子做简要介绍。<br/>2、如果需要回复才可见的内容可以调用隐藏标签，格式如：<span style="color:green">[replyview]内容[/replyview]</span> <br/>3、{$ShowUpFilesTips}
+							 </td>
+                          </tr>
+						   <input type="hidden" name="boardid" id="boardid" value="{$BoardID}"/>
+						   <input type="hidden" value="" name="pic" id="pic" />
+						   <input type="hidden" value="" name="AnnexExt" id="AnnexExt" />
+                          <tr> 
+						    <td height="305" class="lefttd">
+							  {$ShowModelField}
+							<textarea style="display:none;width:500px;height:300px" id="Content" name="Content">{$Content}</textarea>
+							<iframe id="Editor" name="Editor" src="../editor/ubb/editor.html?id=Content" frameBorder="0" marginHeight="0" marginWidth="0" scrolling="No" style="height:430px;width:99%"></iframe>
+                            {$ShowUpFiles}
+						   </td>
+					      </tr>
+						  
+				
+						   
+						  {IF:mid(KS.Setting(161),3,1)="1"}
+                          <tr>
+                            <td height="30">
+							<span style="color:red">问题：{$Question}</span><br/>
+							答案：<input type="text" class="textbox" name="Answer{$RndID}" id="Answer{$RndID}"> <span style="color:#999999">防发帖机，只有回答正确才可以发帖</span>							</td>
+						  </tr>
+						  {/IF}
+                          <tr>
+                            <td colspan="2" height="45" style="padding-left:10px">
+							<input type="submit" style="height:26px;" class="btn" value=" OK,立 即 发 表 " name="Submit" onClick="return(checkform())">{$SynchronizedOption}
+							&nbsp;
+							<span {$CodeTF}>附 加 码 ：<script>writeVerifyCode('{$GetInstallDir}',1);</script></span></td>
+                          </tr>
+						   </form>
+                        </table> 
+		
+	]]>
+	</label>
+
+
+   <label name="postvote">
+    <![CDATA[
+	
+	<div class="postvote">
+	<script type="text/JavaScript">
+	
+	var currvotenum = {$CurrVoteNum};
+	function addrow() {
+		currvotenum++;
+		if (currvotenum>{$MaxAllowVoteNum}){
+		 $.dialog.alert('最多只能添加{$MaxAllowVoteNum}个选项!',function(){});
+		 return;
+		}
+		jQuery("#vote"+currvotenum).show();
+		
+	}
+	</script>
+
+
+
+<table width="100%">
+<tr>
+<td  width="400">
+    <table cellspacing="1" id="votetable" width="80%" cellpadding="1" border="0">
+	<tr style='font-weight:bold;' class="title"><td colspan="2">选项:最多可填写 {$MaxAllowVoteNum} 个选项</td></tr>
+	<tr><td>{$VoteItem}</td></tr>
+	<tr><td><div><img src="images/edit.gif" align="absmiddle"/> <a href="#" onclick="addrow()" class="addtr">增加一项</a></div></td>
+	</tr>
+	</table>
+</td>
+<td valign="top" style="color:#999;line-height:25px">
+ 
+ 投票类型:
+ <select name="VoteType" id="VoteType">
+  {$VoteTypeOption}
+</select>
+ <br/>
+ 匿名投票:<label><input type='checkbox' name='nmtp' value='1'{$Nmtp}>允许匿名投票</label>
+ <br/>
+ 启用时间限制: {$TimeLimit}
+ <br/>
+ <div id='time'{$ShowLimitTime}>
+	有效天数<input type='text' class="textbox" name='ValidDays' size='4' style='text-align:center' value='{$ValidDays}'>天
+</div>
+  </td>
+ </tr>
+</table>
+
+
+	</div>
+	
+	]]>
+   </label>
+</posttemplate>

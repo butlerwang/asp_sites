@@ -1,0 +1,92 @@
+@charset "gb2312";
+@import url("cs2.css");
+/* CSS Document */
+li{ list-style:none;}
+img{ border:0px;}
+ul{ margin:0px; padding:0px;}
+.left{ float:left;}
+.right{ float:right;}
+.clear{ height:0; line-height:0; clear:both;}
+h1{ text-align:center; padding:15px 0 5px; margin:0;  height:30px; line-height:30px; font-size:18px; overflow:hidden;}
+.lai{ text-align:center; padding:0 0 10px;  margin:0 10px 20px; border-bottom:1px dashed #ccc; height:30px; line-height:30px; overflow:hidden; color:#999;}
+.top{  height:30px; line-height:30px; background:url(nk01.jpg); text-align:right;}
+.top a{  padding:0 2px; line-height:30px;}
+.header{ padding:5px 0; background:#FFFFFA; text-align:center;}
+.header img{ width:100%; max-width:440px;}
+.nav .ng{ border-right:none;}
+
+.bn{height:97px; padding:3px 0; clear:both; text-align:center;}
+.sou { width:100%;  height:45px; border-bottom:1px solid #e5e5e5; position:relative;}
+.sou .left{ width:125px; height:45px; background:url(ts02.jpg) no-repeat 5px center #fff; padding:0;}
+.sou .tle{ display:block; width:140px;height:45px; background:url(ts03.gif) no-repeat center; position:absolute; right:0; top:0; text-indent:-1000px; overflow:hidden;}
+
+.imag{ padding:25px 0;}
+.text{ line-height:30px; padding:10px;}
+.jibing a{ display:block; float:left; width:33%; height:95px; line-height:26px; padding:10px 0 5px 0; text-align:center;}
+.jibing a i{ display:block; font-style:normal; clear:both; }
+.zhj { padding:5px 0; height:180px;}
+.zhj .img{ float:left; width:110px;}
+.zhj .img img{ width:100px; height:140px;}
+.zhj .right{ float:left; width:195px; padding-left:10px;}
+.zhj .right .zj_title{ padding-left:37px; background:url(by22.jpg) no-repeat left center;}
+.zhj .right .zj_title a{ line-height:20px;}
+.zhj .right li{ line-height:22px; height:24px; padding-left:30px; background:url(by23.jpg) no-repeat left center;}
+.zhj .right ul{ padding-top:10px;}
+.zhj .zixun{ display:block; height:28px; padding-top:10px; background:url(by24.jpg) no-repeat center bottom;  clear:both;}
+.zhj .zixun a{display:block; height:28px;text-indent:-1000px; overflow:hidden; width:49%; float:left;}
+.yjth{ height:81px; clear:both; text-align:center;}
+.zhj .right a{ color:#000; font-weight:900;}
+.bottom{padding:5px 3px 45px; line-height:24px; text-align:center;}
+.g_zixun a{ display:block; width:100%;    height: 30px;
+    line-height: 30px;
+    text-align: center;overflow:hidden;}
+.neirong { padding:5px;}
+.neirong .nr_title{ line-height:50px; height:50px;  color:#000; text-align:center; font-weight:900; padding-bottom:15px; }
+.neirong .text{ color:#000; padding:0 15px; line-height:22px;}
+.neirong .text p{ padding-bottom:15px;}
+.neirong  .zixun a{ padding:10px  0 0 12px;}
+.neirong .zj_title{ line-height:50px; height:50px;color:#000; text-align:center; font-weight:900; }
+.neirong .zj_title b{ color:#5CB400;}
+.zj_ly{ line-height:30px; height:30px;color:#666; text-align:center; padding-bottom:15px;}
+.zj_text{ text-align:center; line-height:35px;}
+.liebiao li { height:34px; line-height:34px; border-bottom:1px solid #ccc;}
+.liebiao li a{ display:block; height:34px; padding:0 10px; background:url(nk82.jpg) no-repeat right center #fff;}
+.liebiao li a:hover{background:url(nk81.jpg) no-repeat right center #F1F1F1;}
+.zjsbt{  color:#5CB400; font-weight:900;}
+.neirong .ly_text strong{ color:#5CB400; }
+.pinglun li{ padding:7px 0; clear:both; height:100px;}
+.pinglun li .pl_title{ font-weight:900; color:#000; line-height:20px; margin:0 2px; background:#ECEAEB; padding:3px 5px;}
+.pinglun li .text{ line-height:26px;}
+.yydt li{ background:url(ts06.jpg) no-repeat 15px center; line-height:40px; border-bottom:1px solid #ccc; height:40px;}
+.yydt li a{ display:block; padding:0 30px 0 40px;  background:url(ts05.jpg) no-repeat right center; height:40px; overflow:hidden;}
+.yydt .title_dt{ padding-left:0;  line-height:45px; background:url(ts04.jpg) repeat-x center; height:45px; width:260px; padding:0; margin:auto; border-bottom:0;}
+.yydt .title_dt a{ padding:0;font-size:18px; height:45px; background:#fff; margin:auto; width:80px; text-align:center; font-weight:bold;}
+.tsjs li a{background:url(ts09.jpg) no-repeat right center;}
+
+.yydt .tuwen{ margin:0; height:100px; overflow:hidden; background:none; line-height:28px; padding:10px 5px;}
+.yydt .tuwen .img { padding:5px 15px 5px 5px; display:block; float:left; height:90px;}
+.yydt .tuwen .img img{ float:left; width:80px; height:80px; padding:5px; border:1px solid #ccc;}
+.yydt .tuwen a{ display:inline; padding:0; background:none;}
+.yydt .tuwen .tit{ display:block; height:30px; overflow:hidden;}
+.yydt .tuwen .txt{ display:block; height:60px; overflow:hidden;}
+.yydt .tuwen .txxt{ display:block; height:80px; overflow:hidden;}
+#position li{ float:left; font-size:28px; line-height:18px; font-weight:900; color:#fff; width:15px;}
+#position .cur{ color:#FFD40C;}
+
+
+#expert {position: relative;}
+.title span{ line-height:35px; padding-left:20px; background:url(list.jpg) no-repeat center;}
+.list li{    background: url(listli.jpg) no-repeat scroll 15px center transparent; padding-left:30px;}
+.zjtd{ margin:auto; width:320px;}
+.zhj{ border-bottom:1px dashed #dedede; margin-bottom:5px;}
+#fenye{ clear:both; height:20px; line-height:20px; font-size:14px; padding:30px 5px;}
+#fenye a,#fenye span{ display:block; float:left; padding:2px 3px; border:1px solid #ccc; margin:0 0 0 2px; height:20px; font-size:14px;}
+.xunsou{ display:block; position:relative;}
+.xunsou .textbox{ border:none; background:none; width:88px; position:absolute; left:12px; top:14px; color:#999; line-height:12px;}
+.xunsou .inputButton{ border:none; background:none; width:23px; height:20px; padding:0; position:absolute; left:99px; top:14px; overflow:hidden; text-indent:-1000px; cursor:pointer;}
+.title_a{line-height:40px; padding:0 5px; background:#e5e5e5;}
+.sou_list{ padding:10px 0;}
+.sou_list li{ padding-left:20px; background:url(ts06.jpg) no-repeat scroll 7px 6px transparent; padding-bottom:10px; border-bottom:1px dashed #ccc; margin-bottom:10px;}
+.sou_list li .artintro,.sou_list li .arturl{ font-size:14px;}
+.sou_list li .art_title{ padding-bottom:7px;}
+.huandeng{ clear:both; padding:5px 0;}

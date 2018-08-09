@@ -1,0 +1,140 @@
+﻿/*
+#Menu { clear:both; text-align:left; margin:0px;}
+#Menu ul li{display:inline;margin:2px;border-right:1px dashed #000;padding-left:5px;padding-right:5px}
+#Menu a:link { text-decoration:none; font-size:14px;}
+#Menu a:visited {font-size:14px;text-decoration:none; }
+#Menu a:hover {color:#DD2000; text-decoration:none; }
+*/ 
+a{text-decoration: none;}   /* 链接无下划线,有为underline */ 
+a:link {color: #1F7ABC;}    /* 未访问的链接 */
+a:visited {color: #1F7ABC;} /* 已访问的链接 */
+a:hover{color: #ff0000;}   /* 鼠标在链接上 */ 
+a:active {color:#1F7ABC;}  /* 点击激活链接 */
+	
+ul{
+	margin:0px;
+	padding:5px;	
+}
+.bestuser {padding:8px 0 5px 10px;width:64px;float:left;}
+.bestuser li {list-style:none outside;}
+.userimg,.username {text-align:center;}
+.userimg img {padding:1px;border:1px #999 solid;width:48px;height:48px;}
+.blank10{ height:10px; overflow:hidden; clear:both;}
+/* 标题列表 */
+#indexlist {width:100%;border-collapse:collapse;border-spacing:0px;border-top:1px #efefef solid;}
+#indexlist {table-layout:fixed;}
+#indexlist td {padding:6px 0px 4px 0px;text-align:center;border-bottom:1px #efefef solid;}
+#indexlist tr.top {font-weight:600;background:#F9F9F9;padding:10px 0 8px 0;}
+
+
+#indexlist td.s1 {text-align:left;width:300px;word-break:break-all;padding:2px 2px 2px 8px;}
+#indexlist td.s1 a {color:#1C5BB0;text-decoration:underline;}
+#indexlist td.s1 a:hover {color:#333;text-decoration:none;}
+
+#indexlist td.s2 {width:70px;overflow-x:hidden;}
+#indexlist td.s2 img {width:24px;height:24px;}
+#indexlist td.s2 a {font-weight:600;display:block;width:70px;height:18px;overflow:hidden;}
+#indexlist td.s3 {font-size:10px;}
+#indexlist td.s4 {width:100px;font-size:10px;}
+
+/* 圈子信息 */
+#ginfo h1 {clear:both;font-size:14px;font-weight:600;border-bottom:1px #999 solid;}
+#ginfo #group_info div{float:left}
+#ginfo #group_info div img{padding:1px;border:1px #999 solid;width:100px;height:100px;}
+#ginfo #group_info div li {margin:0 0 0 20px;list-style:circle inside;}
+
+#indexlist{}
+#indexlist tr.r1 {background:#fff;}
+#indexlist tr.r2 {background:#FBFDFF;}
+
+#user_list h1 {font-size:14px;font-weight:600;border-bottom:1px #999 solid;}
+/* 用户列表 */
+#user_list ul {width:106px;float:left;text-align:center;background:#F9F9F9;border:1px #E4E4E4 solid;margin:5px;padding:5px;}
+#user_list ul li {list-style:none outside;}
+#user_list ul li.u1 img{padding:1px;border:1px #999 solid;width:56px;height:56px;}
+#user_list ul li.u4 a {border:1px outset;padding:2px 7px 0px 7px;}
+#user_list ul li.u4 a:hover {background:#fff;}
+
+
+
+/*分页样式*/
+.fenye{clear:both;}
+.fenye a{text-decoration:none}
+.fenye .prev,.fenye .next{width:52px; text-align:center;}
+.fenye a.curr{width:22px;background:#1f3a87; border:1px solid #dcdddd; color:#fff; font-weight:bold; text-align:center;}
+.fenye a.curr:visited {color:#fff;}
+.fenye a{margin:5px 4px 0 0; color:#1E50A2;background:#fff; display:inline-table; border:1px solid #dcdddd; float:left; text-align:center;height:22px;line-height:22px}
+.fenye a.num{width:22px;}
+.fenye a:visited{color:#1f3a87;} 
+.fenye a:hover{color:#fff; background:#1E50A2; border:1px solid #1E50A2;float:left;}
+.fenye span{display:block;margin:10px}
+
+
+
+h3 {
+line-height:23px;
+clear:both;
+font-size:14px; font-weight:bold; color:green;
+margin:5px;
+border-bottom:#f3f3f3 1px solid;
+}
+h2 div,h3 div {
+font-size:14px; font-weight:bold; color:green;
+padding-left:12px;
+}
+
+
+/*首页作品展示动画*/
+#divcenter_one{ background:#000 ; margin-bottom:6px; float:left;clear:both;  width:728px}
+.divcenter_work_one {width: 716px;border-right:#444 1px solid;border-bottom:#444 1px solid;border-left:#444 1px solid;padding:10px 6px 0px 6px;clear:both;float:left}
+.fpic {BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; Z-INDEX: 3; BACKGROUND: #000;  BORDER-BOTTOM-WIDTH: 0px; WIDTH:709px; POSITION: relative; HEIGHT:408px; BORDER-RIGHT-WIDTH: 0px;BORDER: #444 1px solid;
+text-align:center; margin-bottom:8px; overflow: hidden}
+.bpic {FLOAT: left; MARGIN: 0px; WIDTH: 244px; POSITION: relative; HEIGHT: 243px}
+#focpic {BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; LEFT: 1px; BORDER-BOTTOM-WIDTH: 0px; POSITION: absolute; TOP: 1px; BORDER-RIGHT-WIDTH: 0px}
+.thubpic {PADDING-RIGHT: 0px; PADDING-LEFT: 4px; Z-INDEX: 20; PADDING-BOTTOM: 0px; WIDTH:80px; CURSOR: pointer; PADDING-TOP: 4px; TOP: 10px; HEIGHT:60px}
+.thubpiccur {PADDING-RIGHT: 0px; PADDING-LEFT: 4px; Z-INDEX: 20; PADDING-BOTTOM: 0px; WIDTH:80px; CURSOR: pointer; PADDING-TOP: 4px; TOP: 10px; HEIGHT:60px}
+.thubpiccur {Z-INDEX: 30; BACKGROUND: url(../images/arrow3.gif) no-repeat left 50%}
+.thubpic img {BORDER-RIGHT: #666 3px solid; BORDER-TOP: #666 2px solid; BORDER-LEFT: #666 3px solid; WIDTH:74px; BORDER-BOTTOM: #666 2px solid; HEIGHT:54px}
+.thubpiccur img {BORDER-RIGHT: #666 3px solid; BORDER-TOP: #666 2px solid; BORDER-LEFT: #666 3px solid; WIDTH: 74px; BORDER-BOTTOM: #666 2px solid; HEIGHT:54px}
+.thubpiccur img {BORDER-LEFT-COLOR: #ccc; BORDER-BOTTOM-COLOR: #ccc; BORDER-TOP-COLOR: #ccc; BORDER-RIGHT-COLOR: #ccc
+}
+
+.userinfomenu li{list-stype-type:none;float:left;width:82px;border:1px solid #CCCCCC;height:22px;margin:2px;padding-top:5px;}
+
+/*日志列表*/
+.loglist{border-bottom:1px #ccc dashed;text-align:left;margin-top:30px;padding-bottom:10px;}
+.loglist .t{margin-bottom:10px;}
+.loglist .title{font-size:16px;font-weight:bold;color:#3366CC;}
+.loglist .pic img{margin-top:5px;border:1px solid #cccccc;padding:2px;width:250px;}
+.loglist .intro{color:#888;padding-left:10px;padding-bottom:10px;font-size:14px}
+.loglist .tips{color:#999}
+.loglist .tips a:link{color:#999;}
+.loglist .tips a:visited{color:#999;}
+.loglist .titlename td{background:#f1f1f1;font-weight:bold}
+
+/*按钮*/
+.btn{border-color:#3366cc;margin-right:1em;color:#fff;background:#3366cc;}
+.btn{border-width:1px;cursor:pointer;padding:.1em 1em;*padding:0 1em;font-size:9pt; line-height:130%; overflow:visible;}
+
+.titletips{font-size:14px;color:#666;font-weight:bold}
+.titletips a{font-size:14px;color:brown;}
+.intro{color:#888}
+.splittd{border-bottom: #efefef 1px dotted;height:22px;}
+
+/*新鲜事*/
+.freshtextarea{width:85%;height:25px;color:#999;background:#FBFBFB;padding:2px;border:1px solid #ccc;overflow:auto}
+.cmttextarea{color:#999;width:98%;height:22px;line-height:22px;border:1px solid #ccc;background:#FBFBFB;overflow:auto}
+.faceborder{border:1px solid #cccccc;padding:2px}
+.mynav{border-bottom:1px solid #3366cc;height:28px;}
+.mynav a{background:#3366cc;height:22px;line-height:22px;padding:2px 15px 2px 15px;display:block;float:left;margin:2px;color:#FFFFFF}
+.mynav a.curr{background:#fff;color:#000000;border:1px solid #3366cc;border-bottom:none;}
+
+/*相册列表*/
+.albumlist{}
+.albumlist li{width:150px;float:left;text-align:center}
+.albumlist li .albumbg{background:url(../images/pic.gif) no-repeat;width:138px;height:106px;}
+
+/*留言*/
+.msgtextarea{width:85%;height:55px;color:#999;background:#FBFBFB;padding:2px;border:1px solid #ccc;overflow:auto}
+.comment_write_title{line-height:30px}
+

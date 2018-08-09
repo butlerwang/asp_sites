@@ -1,0 +1,1 @@
+﻿document.write("$ADs_Content$")

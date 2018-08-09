@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<field>
+ <template><![CDATA[{@TemplateDir}/二手房源/筛选模板.html]]></template>
+ <isrewrite>0</isrewrite>
+ <maxperpage>20</maxperpage>
+ <item name="tid" enabled="true">
+  <title>分类</title>
+  <fieldname>tid</fieldname>
+  <fieldtype>-1</fieldtype>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item  name="KS_bianhao" enabled="false">
+  <title>自定义编号</title>
+  <fieldtype>1</fieldtype>
+  <fieldname>KS_bianhao</fieldname>
+  <condition>dy</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item  name="title" enabled="false">
+  <title>简短标题</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>title</fieldname>
+  <condition>dy</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item name="KS_qy" enabled="true">
+  <title>区域</title>
+  <fieldtype>3</fieldtype>
+  <fieldname>KS_qy</fieldname>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item  name="KS_dizhi" enabled="false">
+  <title>详细地址</title>
+  <fieldtype>1</fieldtype>
+  <fieldname>KS_dizhi</fieldname>
+  <condition>dy</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item name="KS_fx" enabled="true">
+  <title>房屋类型</title>
+  <fieldtype>3</fieldtype>
+  <fieldname>KS_fx</fieldname>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item name="KS_hx" enabled="true">
+  <title>户型</title>
+  <fieldtype>3</fieldtype>
+  <fieldname>KS_hx</fieldname>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item  name="KS_wsj" enabled="false">
+  <title>卫生间</title>
+  <fieldtype>3</fieldtype>
+  <fieldname>KS_wsj</fieldname>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item name="KS_lc" enabled="true">
+  <title>所在楼层</title>
+  <fieldtype>3</fieldtype>
+  <fieldname>KS_lc</fieldname>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item name="KS_lg" enabled="true">
+  <title>总楼层</title>
+  <fieldtype>3</fieldtype>
+  <fieldname>KS_lg</fieldname>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item  name="keywords" enabled="false">
+  <title>关 键 字</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>keywords</fieldname>
+  <condition>dy</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item  name="KS_fangling" enabled="false">
+  <title>建筑年份</title>
+  <fieldtype>4</fieldtype>
+  <fieldname>KS_fangling</fieldname>
+  <condition>dys</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item  name="author" enabled="false">
+  <title>二手房作者</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>author</fieldname>
+  <condition>dy</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item name="KS_jzmj" enabled="true">
+  <title>建筑面积</title>
+  <fieldtype>12</fieldtype>
+  <fieldname>KS_jzmj</fieldname>
+  <condition>dys</condition>
+  <showvalue>不限,50平米以下,50-70平米,70-90平米,90-110平米,110-130平米130-150平米,150-200平米,200平米以上</showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item  name="origin" enabled="false">
+  <title>二手房来源</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>origin</fieldname>
+  <condition>dy</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item  name="KS_fsss" enabled="false">
+  <title>附属设置</title>
+  <fieldtype>7</fieldtype>
+  <fieldname>KS_fsss</fieldname>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item  name="KS_cheku" enabled="false">
+  <title>车库面积</title>
+  <fieldtype>12</fieldtype>
+  <fieldname>KS_cheku</fieldname>
+  <condition>dys</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item  name="area" enabled="false">
+  <title>选择地区</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>area</fieldname>
+  <condition>dy</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item  name="KS_zxzk" enabled="false">
+  <title>装修状况</title>
+  <fieldtype>3</fieldtype>
+  <fieldname>KS_zxzk</fieldname>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item  name="intro" enabled="false">
+  <title>二手房导读</title>
+  <fieldtype>0</fieldtype>
+  <fieldname>intro</fieldname>
+  <condition>dy</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item  name="KS_ptss" enabled="false">
+  <title>配套设施</title>
+  <fieldtype>3</fieldtype>
+  <fieldname>KS_ptss</fieldname>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item name="KS_jiage" enabled="true">
+  <title>房屋售价</title>
+  <fieldtype>12</fieldtype>
+  <fieldname>KS_jiage</fieldname>
+  <condition>dys</condition>
+  <showvalue>不限,15万以下,15-25万,25-35万,35-45万,45-55万,55-70万,70-90万,90-120万,120-150万,150万以上</showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item  name="KS_fkfs" enabled="false">
+  <title>付款方式</title>
+  <fieldtype>3</fieldtype>
+  <fieldname>KS_fkfs</fieldname>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item  name="KS_kfsj" enabled="false">
+  <title>看房时间</title>
+  <fieldtype>3</fieldtype>
+  <fieldname>KS_kfsj</fieldname>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item  name="KS_name" enabled="false">
+  <title>联系人</title>
+  <fieldtype>1</fieldtype>
+  <fieldname>KS_name</fieldname>
+  <condition>dy</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item  name="KS_tel" enabled="false">
+  <title>联系手机</title>
+  <fieldtype>1</fieldtype>
+  <fieldname>KS_tel</fieldname>
+  <condition>dy</condition>
+  <showvalue></showvalue>
+  <searchvalue></searchvalue>
+ </item>
+ <item  name="KS_fbz" enabled="false">
+  <title>信息来源</title>
+  <fieldtype>3</fieldtype>
+  <fieldname>KS_fbz</fieldname>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item  name="KS_weituo" enabled="false">
+  <title>是否委托</title>
+  <fieldtype>3</fieldtype>
+  <fieldname>KS_weituo</fieldname>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item  name="KS_fyzt" enabled="false">
+  <title>房源状态</title>
+  <fieldtype>3</fieldtype>
+  <fieldname>KS_fyzt</fieldname>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <item  name="KS_fwxz" enabled="false">
+  <title>房屋性质</title>
+  <fieldtype>3</fieldtype>
+  <fieldname>KS_fwxz</fieldname>
+  <condition>dy</condition>
+  <showvalue>0</showvalue>
+  <searchvalue>0</searchvalue>
+ </item>
+ <orderitem name="id" enabled="true">
+  <uptitle>按二手房ID升序</uptitle>
+  <downtitle>按二手房ID降序</downtitle>
+ </orderitem>
+ <orderitem  name="adddate" enabled="false">
+  <uptitle>按添加时间升序</uptitle>
+  <downtitle>按添加时间降序</downtitle>
+ </orderitem>
+ <orderitem  name="KS_fangling" enabled="false">
+  <uptitle>按建筑年份升序</uptitle>
+  <downtitle>按建筑年份降序</downtitle>
+ </orderitem>
+ <orderitem  name="KS_jzmj" enabled="false">
+  <uptitle>按建筑面积升序</uptitle>
+  <downtitle>按建筑面积降序</downtitle>
+ </orderitem>
+ <orderitem  name="KS_cheku" enabled="false">
+  <uptitle>按车库面积升序</uptitle>
+  <downtitle>按车库面积降序</downtitle>
+ </orderitem>
+ <orderitem  name="KS_jiage" enabled="false">
+  <uptitle>按房屋售价升序</uptitle>
+  <downtitle>按房屋售价降序</downtitle>
+ </orderitem>
+ <optionitem  name="1">
+  <title>所有二手房</title>
+  <sqlparam><![CDATA[1=1]]></sqlparam>
+ </optionitem>
+ <optionitem  name="2">
+  <title>推荐二手房</title>
+  <sqlparam><![CDATA[recommend=1]]></sqlparam>
+ </optionitem>
+ </field>

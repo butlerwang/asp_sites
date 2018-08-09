@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="gb2312"?>
+<posttemplate>
+  <label name="showtitle">
+		<![CDATA[
+   <div class="dianping"><h2><span id="more"><a href="{$MoreRateUrl}">查看更多点评>></span>最新点评: [点评：{$CommentNum} 条] </a></h2>
+  <span class="defeng">平均得分情况：{$GetAgvStr} </span></div>
+  ]]>
+ </label>
+  <label name="show">
+		<![CDATA[
+		 <table width="100%" class="showdp" border="0" cellspacing="0" cellpadding="0">
+		   <tr>
+		   <td class="dptime"><span id="username">网友：{$UserName}</span> <span id="posttime">时间：{$PostTime}</span>     用户IP：{$UserIP}</td>
+		  </tr>
+		  <tr>
+		   <td class="dpfloor"><font color=red>{$Floor}楼、</font>&nbsp;{$Title}</td>
+		  </tr>
+		  <tr>
+		   <td>
+		     <div class="dpstars"> {$ShowStar}</div>
+			 <div class="clear"></div>
+		     <div class="dpcontent"> {$Content}</div>
+		   </td>
+		  </tr>
+		 
+		 </table>
+		]]>
+ </label>
+ <label name="post">
+		<![CDATA[
+		{$Domain}
+		<script language="JavaScript" src="{$GetSiteUrl}ks_inc/jquery.rater.js"></script>
+		<script type="text/javascript" src="{$GetSiteUrl}ks_inc/lhgdialog.js"></script>
+		<script type="text/javascript">
+		function setRateValue(v, rateId){
+			var divId = "#" + rateId + "_desc";
+			var scoreDesc = "";
+			var impression = new Array("很低", "较低", "一般", "较高", "很高");
+			
+			$("#" + rateId).attr("value", v);	
+			scoreDesc = impression[v-1];
+			$(divId).slideUp(150);
+			$(divId).slideDown(200);	
+			$(divId).attr("innerHTML", v + "分：" +scoreDesc);
+		}
+		function checkcommentlength(cobj)
+		{ 
+			var cmax={$MaxLenNum};
+			if(cmax<=0) return;
+			if (cobj.value.length>cmax) {
+			cobj.value = cobj.value.substring(0,cmax);
+			 $.dialog.alert("点评字数不能超过"+cmax+"个字符!",function(){});
+			}
+			else {
+			 $('#commentmax').html(cmax-cobj.value.length);
+			}
+		}
+		function checkComment(){
+		 if($("#cname").val()==''){
+		  $.dialog.alert('请输入您的昵称!',function(){ $("#cname").focus();});
+		  return false;
+		 }
+		 if($("#title").val()==''){
+		  $.dialog.alert('请输入点评标题!',function(){ $("#title").focus();});
+		  return false;
+		 }
+		 if ($("#content").val()==''){
+		  $.dialog.alert('请输入点评内容!',function(){ $("#content").focus();});
+		  return false;
+		 }
+		 $("#loading").show();
+		 return true;
+		 $("#submitBtn").attr("disabled",true);
+		}
+		
+		</script>
+		 <form name="commentform" action="{$GetSiteUrl}plus/rating.asp" target="hidframe" method="post">
+	    <input type="hidden" name="action" value="DoSave">
+	    <input type="hidden" name="ChannelID" value="{$ChannelID}">
+	    <input type="hidden" name="Infoid" value="{$ItemID}">
+	    <input type="hidden" name="ProjectID" value="{$ProjectID}">
+		  <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="wydp">
+		    <h3>我也说两句</h3>
+
+	        <tr>
+	          <td width="70" height="30" align="center"><span class="star-span">*</span><strong>昵称：</strong></td>
+	          <td><input class="add_comment_name" maxlength="10"  name="cname" type="text" id="cname"  size="20" onclick="this.value = ''"/></td>
+	        </tr>
+	        <tr>
+	          <td valign="top" align="center"><span class="star-span">*</span><strong>评分：</strong></td>
+	          <td valign="top">
+			    {$ScoreItem}
+				</td>
+	        </tr>
+	        <tr>
+	          <td height="32" align="center"><span class="star-span">*</span><strong>标题：</strong></td>
+	          <td><input name="title" type="text" id="title" maxlength="100" value="点评：{$Title}" size="40" class="add_comment_title" /></td>
+	        </tr>
+	        <tr>
+	          <td valign="top" align="center"><span class="star-span">*</span><strong>内容：</strong></td>
+	          <td style="text-align:left">
+	          <font color="#FF0000">请网友遵纪守法并注意语言文明&nbsp;(对于谩骂、侮辱、灌水点评我们将删除，请不要浪费您的宝贵时间)</font>
+	          <br>
+	          <span style="line-height:25px;float:left">输入的字数限制为：{$MaxLen}</span><br/>
+			</td>
+			</tr>
+			<tr>
+			 <td></td>
+			 <td>
+	          <textarea name="content" id="content" cols="68" rows="6" class="add_comment_content" onkeydown="checkcommentlength(this);" onkeyup="checkcommentlength(this);"></textarea>
+	          <br/>	          
+	          <span id="character-info" style="{$DisplayZS}height:25px;line-height:25px;float:left">剩余字数 <span id="commentmax">{$MaxLenNum}</span> 个字</span>
+	          </td>
+            </tr>
+	        <tr id="showverifycode">
+	          <td height="30" valign="middle"><span class="star-span">*</span><strong>验证码：</strong></td>
+	          <td valign="middle">
+			   <script type="text/javascript">writeVerifyCode("{$GetSiteUrl}",0)</script>
+	            &nbsp;请输入验证码。
+	          </td>
+            </tr>
+			
+			<tr id="showzcj">
+	          <td height="30" valign="middle"><span class="star-span">*</span><strong>请回答：</strong></td>
+	          <td valign="middle">
+	         <script src="{$GetSiteUrl}plus/rating.asp?action=showzcj&ProjectID={$ProjectID}" type="text/javascript"></script>
+	          </td>
+            </tr>            
+            
+	        <tr>
+	          <td height="24" rowspan="2">　</td>
+	          <td height="30px">
+	          <input class="button1" id="submitBtn" name="submitBtn"  type="submit" value="发表点评" onclick="javascript:return checkComment()"/>
+			  <div id="loading" style="width:400px;display:none;height:30px;float:left;padding-top:10px">
+	          	<img src="{$GetSiteUrl}Images/default/loadingAnimation.gif" border="0"/>&nbsp;&nbsp;正在保存数据，请稍候...	          	
+	          </div>	          
+	          
+	          
+            </tr>
+	        <tr>
+	          <td>
+	          <font color="#008000">
+	          *&nbsp;恶意评论和灌水经本站查明后管理员会将其删除，请网友注意评论者IP，以防被骗。<br>
+	          *&nbsp;点评人发言纯属个人行为，与本网站立场无关。	       
+	          </font>
+	          </td>
+            </tr>
+	      </table>
+	    </form>
+		<iframe src="about:blank" name="hidframe" width="0" height="0"></iframe>
+	]]>
+   </label>
+</posttemplate>

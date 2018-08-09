@@ -1,0 +1,218 @@
+﻿a{text-decoration: none;} /* 链接无下划线,有为underline */ 
+a:link {color: #000000;} /* 未访问的链接 */
+a:visited {color: #000000;} /* 已访问的链接 */
+a:hover{color: #FF0000;text-decoration: underline;} /* 鼠标在链接上 */ 
+a:active {color: #FF0000;} /* 点击激活链接 */
+td	{font-family:  "Verdana, Arial, Helvetica, sans-serif"; font-size: 11.5px;  text-decoration:none ; text-decoration:none ; }
+body  {  margin:0px; font:9pt 宋体; FONT-SIZE: 9pt;text-decoration: none;
+	SCROLLBAR-FACE-COLOR: #2B73F1;
+	SCROLLBAR-HIGHLIGHT-COLOR: #0650D2;
+	SCROLLBAR-SHADOW-COLOR: #449AE8;
+	SCROLLBAR-3DLIGHT-COLOR: #449AE8;
+	SCROLLBAR-ARROW-COLOR: #02338A;
+	SCROLLBAR-TRACK-COLOR: #0650D2;
+	SCROLLBAR-DARKSHADOW-COLOR: #0650D2;
+OVERFLOW-X: hidden;
+	OVERFLOW: scroll;  }
+
+.HighlightItem {
+	padding-left:10;
+	cursor:default;
+	font-size:9pt;
+	background-Color:highlight;
+	color:white;
+	width: 100%;
+	line-height: 25px;
+}
+.sort{
+	background:#2B73F1;
+	background:url(Images/titlebg.png);
+	height:20px;
+	letter-spacing:2px;
+	font-weight:bold;
+	text-align:center;
+}
+.sortbutton{
+	background:#E0EEFD;
+	padding-left: 1px;
+	padding-right: 5px;
+	border-top: 1px solid threedhighlight;
+	border-left: 1px solid threedhighlight;
+	border-right: 1px solid threedshadow;
+	border-bottom: 1px solid threedshadow;
+}
+.topdashed{
+background: url("images/titlebg.png") repeat-x left top; border-bottom: #83B5CD 1px solid;height:30px;padding-top:10px;
+}
+.buttonstyle{background-image: url(images/button.gif);
+       background-repeat: no-repeat;
+       margin: 0px;
+       padding: 5px 0 0 15px;
+       display: block;
+       list-style-type: none;
+       height: 24;}
+.button{
+BORDER-RIGHT: #002D96 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #002D96 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFFF, EndColorStr=#9DBCEA); BORDER-LEFT: #002D96 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #002D96 1px solid}
+.upfile{
+border-style: solid;
+border-width: 1;
+}
+.Default
+{
+	border-right: 1px solid;
+	border-top: 1px solid;
+	font-size: 12px;
+	border-left: 1px solid;
+	border-bottom: 1px solid;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border-color: Black;
+	cursor: default;
+
+}
+.Selected
+{   background:url(Images/PageButton.gif);
+	border-right: 1px solid;
+	border-top: 1px solid;
+	font-size: 12px;
+	border-left: 1px solid;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border-color: Black;
+	cursor: default;
+
+}
+.ToolBarButtonLine {
+	border-bottom: 1px solid;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border-color: Black;
+}
+.FolderItem {
+	cursor: default;
+}
+.FolderSelectItem {
+	background-color:highlight;
+	cursor: default;
+	color: white;
+}
+.hr {BORDER-TOP: #000000 1px solid; BORDER-BOTTOM: #ffffff 1px solid;}
+.textbox {
+	BORDER-RIGHT: #666 1px solid; BORDER-TOP: #666 1px solid; FONT-SIZE: 12px; BACKGROUND: #ffffff; BORDER-LEFT: #666 1px solid; COLOR: #000; BORDER-BOTTOM: #666 1px solid
+}
+.FolderSelected{filter:Alpha(Opacity=50);}
+td.TableRow1 {
+	background-color:#EEEEE6;
+
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+.HeaderTDStyle {
+	background:#73A2D6;
+	padding-left: 6px;
+	padding-right: 6px;
+	border-top: 0px solid threedhighlight;
+	border-left: 0px solid threedhighlight;
+	border-right: 0px solid threedshadow;
+	border-bottom: 0px solid threedshadow;
+}
+.body
+{
+	font-weight: normal;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+td.Border1
+{
+    background-color:#F3F3FA;
+}
+td.forumRow
+{
+    background-color:#F3F3FA;
+}
+
+td.forumRowHighlight
+{
+    background-color: #EAEAF3;
+}
+.tableBorder
+{
+    border: 1px #B1B4D1 solid ; 
+    background-color: #FFFFFF;
+    font: 12px
+}
+td.TableBody1
+{
+background-color: #F3F3FA;
+}
+.tableBorder1
+{
+background-color: #F3F3FA; 
+border: 1px solid #000000;
+}
+.Title
+{
+    background:#009AE8;
+    color: #ffffff;
+    font-weight: normal;
+}
+.tdbg{
+    background:#f0f0f0;
+}
+.tdbgmouseover{
+    background:#ffffff;
+}
+.list{
+  background:#ffffff;
+}
+.listmouseover{
+    background:#EEF8FE;
+}
+
+.border
+{
+    border: 1px solid #449AE8;background:#ffffff;
+}
+
+.CTable{
+	border-top: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #666666;
+	background-color: #FFFFFF;
+}
+.Cbody{
+      background:#DBDFE8 url(images/mainback.jpg) repeat-x fixed; margin:10px;
+}
+.CTitle{
+	background:#0E70A6;
+	padding:5px;
+	text-align:left;
+	color:#FFFFFF;
+	font-size:13px;
+	font-weight:bolder;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.clefttitle{
+    background:#E0EEF5;
+	font-size:12px;
+    line-height: 120%;
+}
+
+
+li {list-style:none;}
+#user_page_search {position:absolute ;width:100%;padding:5px 0 0 0;height:26px;border-top:1px #83B5CD solid;border-bottom:1px #83B5CD solid;background:#dae5ef url("images/titlebg.png") repeat-x left top;text-align:center;overflow-x:hidden;overflow-y:hidden;}
+#menu_top {margin: 0px;padding:2px 0 0 5px;width:100%;height:31px;border-bottom:1px #83B5CD solid;background: url("images/titlebg.png") repeat-x left top;overflow-x:hidden;overflow-y:hidden;}
+#go {font-size:14px;position:absolute;top:0px;right:0px;padding:4px 0px 0 0;}
+#go select {margin:0 0 -1px 0;}
+
+#gos {position:absolute;top:0px;right:0px;padding:6px 0px 0 0;}
+
+
+#mt {margin: 0px;padding:2px 0 0 5px;width:100%;height:31px;border-bottom:1px #83B5CD solid;background: url("images/titlebg.png") repeat-x left top;overflow-x:hidden;overflow-y:hidden;}
+#mt li {float:left;margin:0 1px 0 0;padding: 6px 6px 0 8px;}
+#mtl{float:left;left:0;margin-top:6px;font-weight:bolder}
+
+#split {margin:0;float:left;width:100%;height:100%;background: url("images/titlebg.png") repeat-x left top;margin:0px 0 0 0;padding:0 0 0 0px;border-top:1px #83B5CD solid;}
+#split li {float:left;margin-left:5;background: url(images/button.gif) no-repeat;padding: 6px 10px 0 8px;display: block;height: 24;cursor:pointer;}
+#splitright {font:9pt 宋体;position:absolute;top:3px;right:0px;}
+#daohang{margin-top:5px;}

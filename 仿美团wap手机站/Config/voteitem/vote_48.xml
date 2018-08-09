@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="gb2312"?>
+<vote>
+	<voteitem id="1">
+		<name><![CDATA[立马再跳到其他单位]]></name>
+		<num>0</num>
+	</voteitem>
+	<voteitem id="2">
+		<name><![CDATA[ 也跳，但争取“吃回头草”]]></name>
+		<num>1</num>
+	</voteitem>
+	<voteitem id="3">
+		<name><![CDATA[ 熬过了试用期再作打算]]></name>
+		<num>0</num>
+	</voteitem>
+	<voteitem id="4">
+		<name><![CDATA[ 不跳，让自己慢慢适应新环境]]></name>
+		<num>0</num>
+	</voteitem>
+</vote>

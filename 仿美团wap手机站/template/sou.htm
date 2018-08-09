@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" type="text/css" href="{$GetInstallDir}imag/css.css">
+<title>{$GetClassIntro}{$GetSiteTitle}</title>
+<meta name="keywords" content="{$GetClass_Meta_KeyWord}{$GetMetaKeyWord}">
+<meta name="description" content="{$GetClass_Meta_Description}{$GetMetaDescript}">
+</head>
+
+<body>
+{LB_头部}
+<div class="title"><a href="#" class="y">站内搜索</a></div>
+<div class="title_a">
+搜索&quot;<span>{@search.keyword}</span>&quot;,本次共找到相关网页约<span>{@search.totalput}</span>条,用时<span>{@search.leavetime}</span>秒
+<div class="clear"></div>
+</div>
+		       <div class="searchlist">
+			         	<ul class="sou_list">
+                        {@loop.begin}
+						<li>
+							<div class="art_title"><a href="{@item.linkurl}" target="_blank">{@item.title} </a> [<a href="{@item.classurl}" target="_blank">{@item.classname}</a>]</div>
+							<span class="artintro">{@item.intro}...</span><br />
+							<span class="arturl">{@item.linkurl} {@item.adddate}</span></li>
+					{@loop.end}
+                    </ul>
+					{@search.showpage}
+			   </div>
+{LB_底部}
+</body>
+</html>

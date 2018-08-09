@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<appid>KesionCMS</appid>
+	<action/>
+	<syskey/>
+	<username/>
+	<password/>
+	<email/>
+	<question/>
+	<answer/>
+	<savecookie/>
+	<truename/>
+	<gender/>
+	<birthday/>
+	<qq/>
+	<msn/>
+	<mobile/>
+	<telephone/>
+	<address/>
+	<zipcode/>
+	<homepage/>
+	<userip/>
+	<jointime/>
+	<experience/>
+	<ticket/>
+	<valuation/>
+	<balance/>
+	<posts/>
+	<userstatus/>
+	<province/>
+	<city/>
+</root>

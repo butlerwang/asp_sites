@@ -1,0 +1,16 @@
+/* CSS Document */
+
+table{border-collapse:collapse;}
+
+/*feedback*/
+.fd_tit{background:url(../images/Else/fdico.gif) 40px top no-repeat;padding:36px 0 0 116px;height:28px;font-weight:700;}
+.fd_b{color:#D91D23;}
+.fd_l{float:left;display:inline;width:130px;text-align:right;margin-top:10px;line-height:20px;}
+.fd_r{float:left;display:inline;width:545px;margin:10px 0 0 12px;}
+.fd_ip1,.fd_ip2{height:16px;border:#9F9F9F 1px solid;}
+.fd_ip1{width:190px;}
+.fd_ip2{width:468px;}
+.fd_con{width:468px;height:120px;border:#9F9F9F 1px solid;}
+.fd_sub,.fd_rec{width:58px;height:22px;cursor:pointer;}
+
+.clear{clear:both;}

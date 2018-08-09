@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="gb2312" ?>
+ <vote>
+  <voteitem id="1">
+    <name><![CDATA[非常喜欢]]></name>
+    <num>0</num>
+  </voteitem>
+  <voteitem id="2">
+    <name><![CDATA[ 很好]]></name>
+    <num>0</num>
+  </voteitem>
+  <voteitem id="3">
+    <name><![CDATA[ 还不错]]></name>
+    <num>0</num>
+  </voteitem>
+  <voteitem id="4">
+    <name><![CDATA[ 不是太好]]></name>
+    <num>0</num>
+  </voteitem>
+  <voteitem id="5">
+    <name><![CDATA[ 一点也不喜欢]]></name>
+    <num>0</num>
+  </voteitem>
+ </vote>
