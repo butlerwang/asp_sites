@@ -1,0 +1,69 @@
+A:link {
+	COLOR: #000099; FONT-FAMILY: "宋体", "serif"; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000099; FONT-FAMILY: "宋体", "serif"; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: red; TEXT-DECORATION: underline
+}
+BODY {
+	FONT-FAMILY: "宋体", "serif"; FONT-SIZE: 14px
+}
+TD {
+	BORDER-BOTTOM-COLOR: #000000; BORDER-LEFT-COLOR: #000000; BORDER-RIGHT-COLOR: #000000; BORDER-TOP-COLOR: #000000; FONT-FAMILY: "宋体", "serif"; FONT-SIZE: 12px
+}
+INPUT {
+	FONT-SIZE: 14px
+}
+P {
+	FONT-SIZE: 14px
+}
+SELECT {
+	FONT-SIZE: 14px
+}
+TABLE {
+	BORDER-BOTTOM-COLOR: #000000; BORDER-COLLAPSE: collapse; BORDER-LEFT-COLOR: #000000; BORDER-RIGHT-COLOR: #000000; BORDER-TOP-COLOR: #000000; FONT-SIZE: 12px
+}
+.9pt {
+	FONT-SIZE: 12px
+}
+.buttons02 {
+	BACKGROUND-COLOR: #0e8ac7; BORDER-BOTTOM: black 1px groove; BORDER-LEFT: #99ccff 1px ridge; BORDER-RIGHT: black 1px groove; BORDER-TOP: #99ccff 1px ridge; COLOR: white; FONT-FAMILY: "宋体", "楷体", "黑体", "幼圆", "trebuchet", "Arial", "geneva"; FONT-SIZE: 9pt
+}
+.userinfo111 {
+	BACKGROUND-COLOR: #eeeeee; BORDER-BOTTOM: thin outset; BORDER-LEFT: thin outset; BORDER-RIGHT: thin outset; BORDER-TOP: thin outset; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-WEIGHT: 400; MARGIN-BOTTOM: 1px; MARGIN-TOP: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; TEXT-DECORATION: blink
+}
+.new {
+	BACKGROUND-COLOR: #cccccc; BORDER-BOTTOM: #0066ff 1px dotted; BORDER-LEFT: #0066ff 1px dotted; BORDER-RIGHT: #0066ff 1px dotted; BORDER-TOP: #0066ff 1px dotted; COLOR: #0066ff; FONT-FAMILY: "Geneva， Arial， Helvetica， san-serif"; TEXT-DECORATION: blink
+}
+.bbsname {
+	FONT-FAMILY: "楷体_GB2312"; FONT-SIZE: 35px; FONT-VARIANT: small-caps; FONT-WEIGHT: 800; TEXT-DECORATION: none
+}
+.name {
+	FONT-FAMILY: "楷体_GB2312"; FONT-SIZE: 35px; FONT-VARIANT: small-caps; FONT-WEIGHT: 800; TEXT-DECORATION: none
+}
+.xx {
+	FONT-FAMILY: "Geneva， Arial， Helvetica， san-serif"; FONT-SIZE: 18px; FONT-VARIANT: small-caps; FONT-WEIGHT: 800; TEXT-DECORATION: none
+}
+.info_title {
+	FONT-SIZE: 18pt
+}
+.lr {
+	FONT-FAMILY: "Geneva， Arial， Helvetica， san-serif"; FONT-SIZE: 10pt; LINE-HEIGHT: 20pt
+}
+.pt {
+	FONT-SIZE: 9pt
+}
+.select {
+	BACKGROUND-COLOR: #ffffff; BORDER-BOTTOM: 1px dotted; BORDER-LEFT: 1px dotted; BORDER-RIGHT: 1px dotted; BORDER-TOP: 1px dotted; COLOR: #0066ff; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-WEIGHT: 400; MARGIN-BOTTOM: 1px; MARGIN-TOP: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; TEXT-DECORATION: blink
+}
+.unnamed1 {
+	BORDER-BOTTOM: 1px dotted; BORDER-LEFT: 1px dotted; BORDER-RIGHT: 1px dotted; BORDER-TOP: 1px dotted; COLOR: #0066ff; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-WEIGHT: 400; MARGIN-BOTTOM: 1px; MARGIN-TOP: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; TEXT-DECORATION: blink
+}
+.cMenu {
+	BACKGROUND-COLOR: #ffffff; BORDER-BOTTOM: buttonhighlight 2px outset; BORDER-LEFT: buttonhighlight 2px outset; BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; CURSOR: default; FONT: 12px "menutext"; POSITION: absolute; VISIBILITY: hidden; WIDTH: 140px
+}
+.menuitems {
+	FONT-SIZE: 12px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px
+}

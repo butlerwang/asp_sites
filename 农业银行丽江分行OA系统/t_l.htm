@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>button_title_l</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script>
+function oa_tool(){
+if(window.parent.oa_frame.cols=="0,16,*"){
+frameshow.src="images/p_1.gif";
+oa_tree.title="隐藏工具栏"
+window.parent.oa_frame.cols="120,16,*";
+}
+else{
+frameshow.src="images/p_2.gif";
+oa_tree.title="显示工具栏"
+window.parent.oa_frame.cols="0,16,*";}
+}
+</script>
+</head>
+<body text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#CCCCCC">
+<table width="16" border="0" height="100%" cellpadding="0" cellspacing="0" align="left">
+  <tr align="center">
+    <td background="images/bg_1.gif">
+      <div id=oa_tree onclick="oa_tool();" title=隐藏工具栏><img id=frameshow src="images/p_1.gif" width="9" height="50" ></div>
+      </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>button_title_r</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script>
+var ttt
+ttt=2;
+function oa_tool1(){
+if(ttt==2)
+{
+ttt=1;
+frameshow1.src="images/p_5.gif";
+frameshow1.alt="显示广告条"
+window.parent.mm.rows="0,10,*,0";
+}
+else
+{
+ttt=2;
+window.parent.mm.rows="70,10,*,0";
+frameshow1.src="images/p_6.gif";
+frameshow1.alt="隐藏广告条"
+}
+}
+</script>
+</head>
+<body text="#000000" leftmargin="0" topmargin="0" bgcolor="#276db2">
+<div onclick="oa_tool1()" align="center"><img id=frameshow1 src="images/p_6.gif" width="50" height="9" alt="隐藏广告条"></div>
+</body>
+</html>

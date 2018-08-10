@@ -1,0 +1,9 @@
+
+<%
+Set  mail  =  Server.CreateObject("CDONTS.NewMail")
+mail.TO  =  "5567@inhe.net"
+mail.From  =  "5567@inhe.net"
+mail.Subject  =  "Ö÷Ìâ"
+mail.Body  =  "E-MailÄÚÈÝ"
+mail.Send
+%> 

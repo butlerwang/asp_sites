@@ -1,0 +1,36 @@
+BODY {
+	FONT-FAMILY: "宋体", "Arial"; FONT-SIZE: 9pt
+}
+TD {
+	FONT-FAMILY: "宋体", "Arial"; FONT-SIZE: 9pt
+}
+table {
+	FONT-FAMILY: "宋体", "Arial"; FONT-SIZE: 9pt
+}
+.heading {
+	FONT-FAMILY: "宋体", "Arial"; FONT-SIZE: 14px
+}
+.show {
+	FONT-FAMILY: "宋体", "Arial"; FONT-SIZE: 14px; LINE-HEIGHT: 20px
+}
+.form {
+	FONT-FAMILY: "宋体", "Arial"; FONT-SIZE: 9pt; HEIGHT: 12pt
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: red; TEXT-DECORATION: underline
+}
+INPUT.buttonface {
+	BORDER-RIGHT: #636563 1px solid; BORDER-TOP: #636563 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #cccccc; BORDER-LEFT: #636563 1px solid; COLOR: #000000; LINE-HEIGHT: normal; BORDER-BOTTOM: #636563 1px solid; FONT-STYLE: normal; HEIGHT: 18px; FONT-VARIANT: normal
+}
+INPUT.smallInput {
+	BORDER-RIGHT: #636563 1px solid; BORDER-TOP: #636563 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 9pt; BORDER-LEFT: #636563 1px solid; LINE-HEIGHT: normal; BORDER-BOTTOM: #636563 1px solid; FONT-STYLE: normal; HEIGHT: 18px; FONT-VARIANT: normal
+}
+input{height:18px;background-color: #ffffff;filter:chroma(color=#ffffff);}
+TEXTAREA{filter:chroma(color=#ffffff);}
+pa{padding:5pt}

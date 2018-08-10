@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>button_title_r</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script>
+function oa_tool1(){
+if(window.parent.oa1_frame.cols=="*,16, 0"){
+frameshow1.src="images/p_3.gif";
+oa1_tree.title="隐藏在线人员列表"
+window.parent.oa1_frame.cols="*,16, 120";
+}
+else{
+frameshow1.src="images/p_4.gif";
+oa1_tree.title="显示在线人员列表"
+window.parent.oa1_frame.cols="*,16, 0";}
+}
+</script>
+</head>
+<body text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#CCCCCC">
+<table width="16" border="0" height="100%" cellpadding="0" cellspacing="0" align="left">
+  <tr  align="center">
+    <td background="images/bg_1.gif"> 
+      <div id=oa1_tree onclick="oa_tool1();" title=隐藏在线人员列表><img id=frameshow1 src="images/p_3.gif" width="9" height="50" ></div>
+      </td>
+  </tr>
+</table>
+</body>
+</html>
